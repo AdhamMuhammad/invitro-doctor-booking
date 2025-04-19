@@ -19,6 +19,14 @@ const Navbar = () => {
               href="#doctors"
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#doctors"
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+            >
               Doctors
             </a>
           </li>
