@@ -1,8 +1,10 @@
-import React from 'react'
+import CurrentAppointments from '../../components/Appointments/CurrentAppointments'
 
 function page() {
   return (
-    <div>page</div>
+    <div className="w-full">
+      <CurrentAppointments />
+    </div>
   )
 }
 

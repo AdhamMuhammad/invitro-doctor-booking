@@ -6,9 +6,9 @@ const doctors = [
     rating: 4.8,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
-    workingDays: ["Sunday", "Monday", "Tuesday", "Wednesday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["10:00 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
+    workingHours: "6:00 AM - 12:00 PM",
+    timeSlots: ["06:30 AM", "09:00 AM", "11:30 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
     id: 2,
@@ -17,9 +17,9 @@ const doctors = [
     rating: 4.5,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "10:00 AM - 4:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM"]
+    workingDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "7:00 AM - 3:00 PM",
+    timeSlots: ["07:30 AM", "09:30 AM", "11:30 AM", "01:00 PM", "02:30 PM", "04:00 PM"]
   },
   {
     id: 3,
@@ -28,9 +28,9 @@ const doctors = [
     rating: 4.9,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
+    workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
     workingHours: "8:00 AM - 2:00 PM",
-    timeSlots: ["08:00 AM", "10:30 AM", "01:00 PM"]
+    timeSlots: ["08:30 AM", "10:00 AM", "11:30 AM", "01:00 PM", "02:30 PM"]
   },
   {
     id: 4,
@@ -39,9 +39,9 @@ const doctors = [
     rating: 4.7,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
-    workingDays: ["Sunday", "Monday", "Wednesday", "Thursday"],
-    workingHours: "11:00 AM - 7:00 PM",
-    timeSlots: ["11:00 AM", "01:30 PM", "04:00 PM"]
+    workingDays: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+    workingHours: "12:00 PM - 6:00 PM",
+    timeSlots: ["12:30 PM", "02:00 PM", "03:30 PM", "05:00 PM"]
   },
   {
     id: 5,
@@ -50,9 +50,9 @@ const doctors = [
     rating: 4.4,
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/48.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 3:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:00 PM"]
+    workingDays: ["Monday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "10:00 AM - 4:00 PM",
+    timeSlots: ["10:30 AM", "12:30 PM", "02:00 PM", "03:30 PM"]
   },
   {
     id: 6,
@@ -61,9 +61,9 @@ const doctors = [
     rating: 4.6,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/51.jpg",
-    workingDays: ["Sunday", "Monday", "Wednesday"],
-    workingHours: "10:00 AM - 6:00 PM",
-    timeSlots: ["10:00 AM", "12:30 PM", "03:00 PM"]
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Saturday"],
+    workingHours: "2:00 PM - 8:00 PM",
+    timeSlots: ["02:30 PM", "04:00 PM", "05:30 PM", "07:00 PM"]
   },
   {
     id: 7,
@@ -72,20 +72,20 @@ const doctors = [
     rating: 4.3,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/52.jpg",
-    workingDays: ["Monday", "Tuesday", "Thursday"],
-    workingHours: "9:30 AM - 5:30 PM",
-    timeSlots: ["09:30 AM", "11:30 AM", "01:00 PM"]
+    workingDays: ["Monday", "Tuesday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "7:00 AM - 1:00 PM",
+    timeSlots: ["07:30 AM", "09:00 AM", "10:30 AM", "12:00 PM"]
   },
   {
     id: 8,
     name: "Dr. Karim Mostafa",
-    specialty: "ENT (Ear, Nose, Throat)",
+    specialty: "E.N.T",
     rating: 4.2,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/36.jpg",
-    workingDays: ["Sunday", "Wednesday", "Friday"],
-    workingHours: "8:30 AM - 2:30 PM",
-    timeSlots: ["08:30 AM", "10:00 AM", "12:30 PM"]
+    workingDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "10:00 AM - 6:00 PM",
+    timeSlots: ["10:30 AM", "12:00 PM", "02:30 PM", "04:00 PM"]
   },
   {
     id: 9,
@@ -94,9 +94,9 @@ const doctors = [
     rating: 4.7,
     location: "Suez",
     image: "https://randomuser.me/api/portraits/women/41.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM"]
+    workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "9:30 AM - 5:30 PM",
+    timeSlots: ["09:00 AM", "11:00 AM", "01:30 PM", "03:30 PM", "05:00 PM"]
   },
   {
     id: 10,
@@ -105,9 +105,9 @@ const doctors = [
     rating: 4.9,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/25.jpg",
-    workingDays: ["Monday", "Tuesday", "Wednesday"],
-    workingHours: "8:00 AM - 4:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:00 PM"]
+    workingDays: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+    workingHours: "7:00 AM - 3:00 PM",
+    timeSlots: ["07:30 AM", "09:00 AM", "10:30 AM", "12:00 PM", "01:30 PM", "03:00 PM"]
   },
   {
     id: 11,
@@ -116,9 +116,9 @@ const doctors = [
     rating: 4.6,
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/23.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:30 AM - 3:30 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM"]
+    workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "8:00 AM - 4:00 PM",
+    timeSlots: ["08:30 AM", "10:00 AM", "12:00 PM", "02:00 PM"]
   },
   {
     id: 12,
@@ -127,9 +127,9 @@ const doctors = [
     rating: 4.4,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/34.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "10:00 AM - 6:00 PM",
-    timeSlots: ["09:30 AM", "11:30 AM", "01:30 PM"]
+    workingDays: ["Tuesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    workingHours: "2:00 PM - 8:00 PM",
+    timeSlots: ["02:30 PM", "04:00 PM", "05:30 PM", "07:00 PM"]
   },
   {
     id: 13,
@@ -138,9 +138,9 @@ const doctors = [
     rating: 4.7,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/20.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "8:30 AM - 2:30 PM",
-    timeSlots: ["08:30 AM", "10:00 AM", "01:00 PM"]
+    workingDays: ["Sunday", "Monday", "Tuesday", "Thursday", "Friday"],
+    workingHours: "6:30 AM - 2:30 PM",
+    timeSlots: ["07:00 AM", "09:00 AM", "10:30 AM", "12:30 PM", "02:00 PM"]
   },
   {
     id: 14,
@@ -149,9 +149,9 @@ const doctors = [
     rating: 4.8,
     location: "Suez",
     image: "https://randomuser.me/api/portraits/men/47.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
+    workingHours: "10:00 AM - 6:00 PM",
+    timeSlots: ["10:30 AM", "12:00 PM", "02:00 PM", "03:30 PM", "05:00 PM"]
   },
   {
     id: 15,
@@ -160,9 +160,9 @@ const doctors = [
     rating: 4.3,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/40.jpg",
-    workingDays: ["Sunday", "Tuesday", "Friday"],
-    workingHours: "10:00 AM - 4:00 PM",
-    timeSlots: ["09:30 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "8:30 AM - 4:30 PM",
+    timeSlots: ["08:30 AM", "10:30 AM", "12:00 PM", "02:30 PM", "04:00 PM"]
   },
   {
     id: 16,
@@ -171,9 +171,9 @@ const doctors = [
     rating: 4.5,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/50.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "8:00 AM - 2:00 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "03:00 PM"]
+    workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "7:00 AM - 3:00 PM",
+    timeSlots: ["07:30 AM", "09:00 AM", "10:30 AM", "12:00 PM"]
   },
   {
     id: 17,
@@ -182,9 +182,9 @@ const doctors = [
     rating: 4.6,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/38.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["09:30 AM", "11:00 AM", "02:00 PM"]
+    workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "9:00 AM - 5:00 PM",
+    timeSlots: ["09:30 AM", "11:00 AM", "01:30 PM", "03:30 PM"]
   },
   {
     id: 18,
@@ -193,9 +193,9 @@ const doctors = [
     rating: 4.7,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/26.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 3:00 PM",
-    timeSlots: ["08:00 AM", "10:30 AM", "12:00 PM"]
+    workingDays: ["Sunday", "Monday", "Wednesday", "Thursday", "Saturday"],
+    workingHours: "9:00 AM - 5:00 PM",
+    timeSlots: ["09:30 AM", "11:30 AM", "02:00 PM", "03:30 PM"]
   },
   {
     id: 19,
@@ -204,9 +204,9 @@ const doctors = [
     rating: 4.9,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/27.jpg",
-    workingDays: ["Monday", "Wednesday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "11:00 AM", "01:00 PM"]
+    workingDays: ["Monday", "Wednesday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "10:00 AM - 6:00 PM",
+    timeSlots: ["10:00 AM", "12:30 PM", "02:30 PM", "04:30 PM"]
   },
   {
     id: 20,
@@ -215,229 +215,229 @@ const doctors = [
     rating: 4.4,
     location: "Suez",
     image: "https://randomuser.me/api/portraits/women/55.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "10:00 AM - 6:00 PM",
-    timeSlots: ["09:30 AM", "11:00 AM", "01:00 PM"]
+    workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "12:00 PM - 8:00 PM",
+    timeSlots: ["12:30 PM", "02:00 PM", "03:30 PM", "05:00 PM"]
   },
   {
-    id: 21,
-    name: "Dr. Ali Ghanem",
-    specialty: "Dermatology",
-    rating: 4.6,
-    location: "Alexandria",
-    image: "https://randomuser.me/api/portraits/men/48.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "10:00 AM - 4:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "03:00 PM"]
+      id: 21,
+      name: "Dr. Ali Ghanem",
+      specialty: "Dermatology",
+      rating: 4.6,
+      location: "Alexandria",
+      image: "https://randomuser.me/api/portraits/men/48.jpg",
+      workingDays: ["Sunday", "Monday", "Tuesday", "Thursday", "Saturday"],
+      workingHours: "8:00 PM - 2:00 AM",
+      timeSlots: ["08:00 PM", "09:30 PM", "11:00 PM", "12:30 AM", "02:00 AM"]
   },
   {
-    id: 22,
-    name: "Dr. Samira Mostafa",
-    specialty: "Pediatrics",
-    rating: 4.7,
-    location: "Giza",
-    image: "https://randomuser.me/api/portraits/women/21.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 3:00 PM",
-    timeSlots: ["08:30 AM", "10:00 AM", "01:00 PM"]
+      id: 22,
+      name: "Dr. Samira Mostafa",
+      specialty: "Pediatrics",
+      rating: 4.7,
+      location: "Giza",
+      image: "https://randomuser.me/api/portraits/women/21.jpg",
+      workingDays: ["Monday", "Wednesday", "Friday"],
+      workingHours: "9:00 AM - 3:00 PM",
+      timeSlots: ["08:30 AM", "10:00 AM", "01:00 PM"]
   },
   {
-    id: 23,
-    name: "Dr. Ibrahim Omar",
-    specialty: "Neurology",
-    rating: 4.5,
-    location: "Cairo",
-    image: "https://randomuser.me/api/portraits/men/39.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "8:30 AM - 4:30 PM",
-    timeSlots: ["10:00 AM", "12:30 PM", "02:00 PM"]
+      id: 23,
+      name: "Dr. Ibrahim Omar",
+      specialty: "Neurology",
+      rating: 4.5,
+      location: "Cairo",
+      image: "https://randomuser.me/api/portraits/men/39.jpg",
+      workingDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
+      workingHours: "8:00 PM - 2:00 AM",
+      timeSlots: ["08:00 PM", "09:30 PM", "11:00 PM", "12:30 AM", "02:00 AM"]
   },
   {
-    id: 24,
-    name: "Dr. Layla Ibrahim",
-    specialty: "Psychiatry",
-    rating: 4.8,
-    location: "Tanta",
-    image: "https://randomuser.me/api/portraits/women/33.jpg",
-    workingDays: ["Sunday", "Tuesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["10:00 AM", "12:30 PM", "03:30 PM"]
+      id: 24,
+      name: "Dr. Layla Ibrahim",
+      specialty: "Psychiatry",
+      rating: 4.8,
+      location: "Tanta",
+      image: "https://randomuser.me/api/portraits/women/33.jpg",
+      workingDays: ["Sunday", "Tuesday", "Friday"],
+      workingHours: "9:00 AM - 5:00 PM",
+      timeSlots: ["10:00 AM", "12:30 PM", "03:30 PM"]
   },
   {
-    id: 25,
-    name: "Dr. Mohamed Fawzy",
-    specialty: "Orthopedics",
-    rating: 4.4,
-    location: "Mansoura",
-    image: "https://randomuser.me/api/portraits/men/29.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "8:00 AM - 2:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "03:00 PM"]
+      id: 25,
+      name: "Dr. Mohamed Fawzy",
+      specialty: "Orthopedics",
+      rating: 4.4,
+      location: "Mansoura",
+      image: "https://randomuser.me/api/portraits/men/29.jpg",
+      workingDays: ["Monday", "Thursday", "Saturday"],
+      workingHours: "8:00 AM - 2:00 PM",
+      timeSlots: ["09:30 AM", "12:00 PM", "03:00 PM"]
   },
   {
-    id: 26,
-    name: "Dr. Nabil Ashraf",
-    specialty: "Ophthalmology",
-    rating: 4.6,
-    location: "Cairo",
-    image: "https://randomuser.me/api/portraits/men/30.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "10:00 AM - 4:00 PM",
-    timeSlots: ["09:30 AM", "11:00 AM", "01:30 PM"]
+      id: 26,
+      name: "Dr. Nabil Ashraf",
+      specialty: "Ophthalmology",
+      rating: 4.6,
+      location: "Cairo",
+      image: "https://randomuser.me/api/portraits/men/30.jpg",
+      workingDays: ["Monday", "Wednesday", "Friday"],
+      workingHours: "10:00 AM - 4:00 PM",
+      timeSlots: ["09:30 AM", "11:00 AM", "01:30 PM"]
   },
   {
-    id: 27,
-    name: "Dr. Dina Ramadan",
-    specialty: "ENT (Ear, Nose, Throat)",
-    rating: 4.7,
-    location: "Suez",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "03:00 PM"]
+      id: 27,
+      name: "Dr. Dina Ramadan",
+      specialty: "E.N.T",
+      rating: 4.7,
+      location: "Suez",
+      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      workingDays: ["Sunday", "Tuesday", "Thursday"],
+      workingHours: "9:00 AM - 5:00 PM",
+      timeSlots: ["10:00 AM", "12:00 PM", "03:00 PM"]
   },
   {
-    id: 28,
-    name: "Dr. Omar Ahmed",
-    specialty: "Cardiology",
-    rating: 4.5,
-    location: "Giza",
-    image: "https://randomuser.me/api/portraits/men/53.jpg",
-    workingDays: ["Monday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 3:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "01:30 PM"]
+      id: 28,
+      name: "Dr. Omar Ahmed",
+      specialty: "Cardiology",
+      rating: 4.5,
+      location: "Giza",
+      image: "https://randomuser.me/api/portraits/men/53.jpg",
+      workingDays: ["Monday", "Tuesday", "Thursday"],
+      workingHours: "9:00 AM - 3:00 PM",
+      timeSlots: ["09:00 AM", "11:00 AM", "01:30 PM"]
   },
   {
-    id: 29,
-    name: "Dr. Rasha Elmasry",
-    specialty: "Pediatrics",
-    rating: 4.7,
-    location: "Alexandria",
-    image: "https://randomuser.me/api/portraits/women/50.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "8:30 AM - 2:30 PM",
-    timeSlots: ["08:30 AM", "10:00 AM", "01:00 PM"]
+      id: 29,
+      name: "Dr. Rasha Elmasry",
+      specialty: "Pediatrics",
+      rating: 4.7,
+      location: "Alexandria",
+      image: "https://randomuser.me/api/portraits/women/50.jpg",
+      workingDays: ["Monday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      workingHours: "8:00 PM - 2:00 AM",
+      timeSlots: ["08:00 PM", "09:30 PM", "11:00 PM", "12:30 AM", "02:00 AM"]
   },
   {
-    id: 30,
-    name: "Dr. Ahmed Zayed",
-    specialty: "Dermatology",
-    rating: 4.9,
-    location: "Tanta",
-    image: "https://randomuser.me/api/portraits/men/25.jpg",
-    workingDays: ["Sunday", "Tuesday", "Friday"],
-    workingHours: "10:00 AM - 4:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+      id: 30,
+      name: "Dr. Ahmed Zayed",
+      specialty: "Dermatology",
+      rating: 4.9,
+      location: "Tanta",
+      image: "https://randomuser.me/api/portraits/men/25.jpg",
+      workingDays: ["Sunday", "Tuesday", "Friday"],
+      workingHours: "10:00 AM - 9:00 PM",
+      timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM", "07:00 PM"]
   },
   {
-    id: 31,
-    name: "Dr. Hana Samy",
-    specialty: "Psychiatry",
-    rating: 4.4,
-    location: "Suez",
-    image: "https://randomuser.me/api/portraits/women/52.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+      id: 31,
+      name: "Dr. Hana Samy",
+      specialty: "Psychiatry",
+      rating: 4.4,
+      location: "Suez",
+      image: "https://randomuser.me/api/portraits/women/52.jpg",
+      workingDays: ["Monday", "Thursday", "Saturday"],
+      workingHours: "9:00 AM - 5:00 PM",
+      timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
   },
   {
-    id: 32,
-    name: "Dr. Mustafa Khaled",
-    specialty: "Orthopedics",
-    rating: 4.6,
-    location: "Cairo",
-    image: "https://randomuser.me/api/portraits/men/41.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "10:00 AM - 4:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+      id: 32,
+      name: "Dr. Mustafa Khaled",
+      specialty: "Orthopedics",
+      rating: 4.6,
+      location: "Cairo",
+      image: "https://randomuser.me/api/portraits/men/41.jpg",
+      workingDays: ["Tuesday", "Thursday", "Saturday"],
+      workingHours: "10:00 AM - 9:00 PM",
+      timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM", "08:00 PM"]
   },
   {
-    id: 33,
-    name: "Dr. Laila Ghanem",
-    specialty: "Ophthalmology",
-    rating: 4.8,
-    location: "Mansoura",
-    image: "https://randomuser.me/api/portraits/women/30.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM"]
+      id: 33,
+      name: "Dr. Laila Ghanem",
+      specialty: "Ophthalmology",
+      rating: 4.8,
+      location: "Mansoura",
+      image: "https://randomuser.me/api/portraits/women/30.jpg",
+      workingDays: ["Monday", "Wednesday", "Friday"],
+      workingHours: "9:00 AM - 4:00 PM",
+      timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM"]
   },
   {
-    id: 34,
-    name: "Dr. Khaled Osama",
-    specialty: "ENT (Ear, Nose, Throat)",
-    rating: 4.5,
-    location: "Giza",
-    image: "https://randomuser.me/api/portraits/men/45.jpg",
-    workingDays: ["Monday", "Tuesday", "Thursday"],
-    workingHours: "10:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "01:30 PM"]
+      id: 34,
+      name: "Dr. Khaled Osama",
+      specialty: "E.N.T",
+      rating: 4.5,
+      location: "Giza",
+      image: "https://randomuser.me/api/portraits/men/45.jpg",
+      workingDays: ["Monday", "Tuesday", "Thursday"],
+      workingHours: "10:00 AM - 9:00 PM",
+      timeSlots: ["09:00 AM", "11:30 AM", "01:30 PM", "07:30 PM"]
   },
   {
-    id: 35,
-    name: "Dr. Salma Fathy",
-    specialty: "Pediatrics",
-    rating: 4.7,
-    location: "Alexandria",
-    image: "https://randomuser.me/api/portraits/women/36.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "8:30 AM - 3:00 PM",
-    timeSlots: ["08:30 AM", "10:30 AM", "01:00 PM"]
+      id: 35,
+      name: "Dr. Salma Fathy",
+      specialty: "Pediatrics",
+      rating: 4.7,
+      location: "Alexandria",
+      image: "https://randomuser.me/api/portraits/women/36.jpg",
+      workingDays: ["Sunday", "Tuesday", "Thursday"],
+      workingHours: "8:30 AM - 3:00 PM",
+      timeSlots: ["08:30 AM", "10:30 AM", "01:00 PM"]
   },
   {
-    id: 36,
-    name: "Dr. Youssef Farid",
-    specialty: "Dermatology",
-    rating: 4.6,
-    location: "Cairo",
-    image: "https://randomuser.me/api/portraits/men/49.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+      id: 36,
+      name: "Dr. Youssef Farid",
+      specialty: "Dermatology",
+      rating: 4.6,
+      location: "Cairo",
+      image: "https://randomuser.me/api/portraits/men/49.jpg",
+      workingDays: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday"],
+      workingHours: "8:00 PM - 2:00 AM",
+      timeSlots: ["08:00 PM", "09:30 PM", "11:00 PM", "12:30 AM", "02:00 AM"]
   },
   {
-    id: 37,
-    name: "Dr. Ranya Shafik",
-    specialty: "Cardiology",
-    rating: 4.4,
-    location: "Tanta",
-    image: "https://randomuser.me/api/portraits/women/28.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM"]
+      id: 37,
+      name: "Dr. Ranya Shafik",
+      specialty: "Cardiology",
+      rating: 4.4,
+      location: "Tanta",
+      image: "https://randomuser.me/api/portraits/women/28.jpg",
+      workingDays: ["Monday", "Thursday", "Saturday"],
+      workingHours: "9:00 AM - 9:00 PM",
+      timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM", "06:30 PM"]
   },
   {
-    id: 38,
-    name: "Dr. Hassan Tamer",
-    specialty: "Pediatrics",
-    rating: 4.8,
-    location: "Giza",
-    image: "https://randomuser.me/api/portraits/men/34.jpg",
-    workingDays: ["Sunday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 3:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM"]
+      id: 38,
+      name: "Dr. Hassan Tamer",
+      specialty: "Pediatrics",
+      rating: 4.8,
+      location: "Giza",
+      image: "https://randomuser.me/api/portraits/men/34.jpg",
+      workingDays: ["Monday", "Wednesday", "Thursday", "Saturday", "Sunday"],
+      workingHours: "8:00 PM - 2:00 AM",
+      timeSlots: ["08:00 PM", "09:30 PM", "11:00 PM", "12:30 AM", "02:00 AM"]
   },
   {
-    id: 39,
-    name: "Dr. Sahar Mohamed",
-    specialty: "Neurology",
-    rating: 4.5,
-    location: "Alexandria",
-    image: "https://randomuser.me/api/portraits/women/29.jpg",
-    workingDays: ["Monday", "Wednesday", "Saturday"],
-    workingHours: "9:30 AM - 4:30 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+      id: 39,
+      name: "Dr. Sahar Mohamed",
+      specialty: "Neurology",
+      rating: 4.5,
+      location: "Alexandria",
+      image: "https://randomuser.me/api/portraits/women/29.jpg",
+      workingDays: ["Monday", "Wednesday", "Saturday"],
+      workingHours: "9:30 AM - 4:30 PM",
+      timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
   },
   {
-    id: 40,
-    name: "Dr. Mona Alaa",
-    specialty: "Psychiatry",
-    rating: 4.6,
-    location: "Cairo",
-    image: "https://randomuser.me/api/portraits/women/38.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+      id: 40,
+      name: "Dr. Mona Alaa",
+      specialty: "Psychiatry",
+      rating: 4.6,
+      location: "Cairo",
+      image: "https://randomuser.me/api/portraits/women/38.jpg",
+      workingDays: ["Sunday", "Tuesday", "Thursday"],
+      workingHours: "9:00 AM - 9:00 PM",
+      timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM", "08:00 PM"]
   },
   {
     id: 41,
@@ -446,9 +446,9 @@ const doctors = [
     rating: 4.7,
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/40.jpg",
-    workingDays: ["Sunday", "Wednesday", "Friday"],
-    workingHours: "10:00 AM - 4:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:00 PM"]
+    workingDays: ["Sunday", "Monday", "Thursday", "Saturday"],
+    workingHours: "7:00 PM - 1:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
     id: 42,
@@ -457,9 +457,9 @@ const doctors = [
     rating: 4.5,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/22.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
+    workingHours: "8:00 PM - 2:00 AM",
+    timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
     id: 43,
@@ -468,9 +468,9 @@ const doctors = [
     rating: 4.6,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/31.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "8:30 AM - 3:30 PM",
-    timeSlots: ["08:30 AM", "11:00 AM", "01:00 PM"]
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Friday"],
+    workingHours: "8:00 PM - 2:00 AM",
+    timeSlots: ["08:00 PM", "10:30 PM", "12:30 AM"]
   },
   {
     id: 44,
@@ -479,9 +479,9 @@ const doctors = [
     rating: 4.7,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/39.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "10:00 AM - 5:00 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "03:30 PM"]
+    workingDays: ["Monday", "Tuesday", "Thursday", "Saturday"],
+    workingHours: "9:00 PM - 3:00 AM",
+    timeSlots: ["09:00 PM", "11:00 PM", "01:00 AM"]
   },
   {
     id: 45,
@@ -491,8 +491,8 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/49.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:30 PM"]
+    workingHours: "10:00 PM - 4:00 AM",
+    timeSlots: ["10:00 PM", "12:00 AM", "02:00 AM"]
   },
   {
     id: 46,
@@ -501,9 +501,9 @@ const doctors = [
     rating: 4.6,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/23.jpg",
-    workingDays: ["Sunday", "Tuesday", "Friday"],
-    workingHours: "8:30 AM - 4:30 PM",
-    timeSlots: ["10:00 AM", "12:30 PM", "03:00 PM"]
+    workingDays: ["Sunday", "Monday", "Thursday", "Saturday"],
+    workingHours: "9:00 PM - 3:00 AM",
+    timeSlots: ["09:00 PM", "11:30 PM", "01:30 AM"]
   },
   {
     id: 47,
@@ -512,20 +512,20 @@ const doctors = [
     rating: 4.8,
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/46.jpg",
-    workingDays: ["Monday", "Wednesday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Monday", "Wednesday", "Thursday", "Saturday"],
+    workingHours: "7:00 PM - 1:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
     id: 48,
     name: "Dr. Samar Elgohary",
-    specialty: "ENT (Ear, Nose, Throat)",
+    specialty: "E.N.T",
     rating: 4.5,
     location: "Suez",
     image: "https://randomuser.me/api/portraits/women/35.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 4:30 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "01:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Sunday"],
+    workingHours: "8:00 PM - 2:00 AM",
+    timeSlots: ["08:00 PM", "10:30 PM", "12:30 AM"]
   },
   {
     id: 49,
@@ -534,9 +534,9 @@ const doctors = [
     rating: 4.7,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/55.jpg",
-    workingDays: ["Sunday", "Thursday", "Saturday"],
-    workingHours: "8:30 AM - 4:30 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:00 PM"]
+    workingDays: ["Monday", "Tuesday", "Thursday", "Saturday"],
+    workingHours: "8:00 PM - 2:00 AM",
+    timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
     id: 50,
@@ -545,9 +545,9 @@ const doctors = [
     rating: 4.6,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/37.jpg",
-    workingDays: ["Sunday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "01:30 PM"]
+    workingDays: ["Sunday", "Monday", "Tuesday", "Thursday"],
+    workingHours: "10:00 PM - 4:00 AM",
+    timeSlots: ["10:00 PM", "12:00 AM", "02:00 AM"]
   },
   {
     id: 51,
@@ -556,9 +556,9 @@ const doctors = [
     rating: 4.5,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/50.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "10:00 AM - 5:00 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "03:00 PM"]
+    workingDays: ["Tuesday", "Thursday", "Saturday"],
+    workingHours: "11:00 PM - 5:00 AM",
+    timeSlots: ["11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
     id: 52,
@@ -567,9 +567,9 @@ const doctors = [
     rating: 4.6,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/53.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "01:00 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
+    workingHours: "8:00 PM - 2:00 AM",
+    timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
     id: 53,
@@ -578,9 +578,9 @@ const doctors = [
     rating: 4.8,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/27.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Sunday"],
+    workingHours: "9:00 PM - 3:00 AM",
+    timeSlots: ["09:00 PM", "11:30 PM", "01:30 AM"]
   },
   {
     id: 54,
@@ -589,20 +589,20 @@ const doctors = [
     rating: 4.7,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/22.jpg",
-    workingDays: ["Monday", "Wednesday", "Saturday"],
-    workingHours: "8:30 AM - 4:30 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "02:00 PM"]
+    workingDays: ["Monday", "Tuesday", "Thursday", "Saturday"],
+    workingHours: "10:00 PM - 4:00 AM",
+    timeSlots: ["10:00 PM", "12:00 AM", "02:00 AM"]
   },
   {
     id: 55,
     name: "Dr. Mohamed Kassem",
-    specialty: "ENT (Ear, Nose, Throat)",
+    specialty: "E.N.T",
     rating: 4.6,
     location: "Suez",
     image: "https://randomuser.me/api/portraits/men/51.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:30 AM - 5:30 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Tuesday", "Thursday", "Saturday"],
+    workingHours: "9:00 PM - 3:00 AM",
+    timeSlots: ["09:00 PM", "11:30 PM", "01:30 AM"]
   },
   {
     id: 56,
@@ -611,9 +611,9 @@ const doctors = [
     rating: 4.8,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/41.jpg",
-    workingDays: ["Monday", "Wednesday", "Saturday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["09:30 AM", "11:00 AM", "01:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
+    workingHours: "7:00 PM - 1:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
     id: 57,
@@ -622,9 +622,9 @@ const doctors = [
     rating: 4.5,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/42.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "10:00 AM - 4:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "01:00 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Sunday"],
+    workingHours: "7:00 PM - 1:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
     id: 58,
@@ -633,9 +633,9 @@ const doctors = [
     rating: 4.7,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/26.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Tuesday", "Thursday", "Saturday"],
+    workingHours: "9:00 PM - 3:00 AM",
+    timeSlots: ["09:00 PM", "11:30 PM", "01:30 AM"]
   },
   {
     id: 59,
@@ -644,9 +644,9 @@ const doctors = [
     rating: 4.6,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/55.jpg",
-    workingDays: ["Monday", "Wednesday", "Saturday"],
-    workingHours: "9:00 AM - 3:00 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Thursday", "Saturday"],
+    workingHours: "8:00 PM - 2:00 AM",
+    timeSlots: ["08:00 PM", "10:30 PM", "12:30 AM"]
   },
   {
     id: 60,
@@ -656,8 +656,8 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/24.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 4:30 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "02:30 PM"]
+    workingHours: "7:00 PM - 1:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
     id: 61,
@@ -666,9 +666,9 @@ const doctors = [
     rating: 4.7,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/54.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "01:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Sunday"],
+    workingHours: "7:00 PM - 4:00 AM",
+    timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM", "02:00 AM"]
   },
   {
     id: 62,
@@ -677,9 +677,9 @@ const doctors = [
     rating: 4.5,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/40.jpg",
-    workingDays: ["Sunday", "Thursday", "Saturday"],
+    workingDays: ["Sunday", "Thursday", "Saturday", "Monday"],
     workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:00 PM"]
+    timeSlots: ["09:00 AM", "11:00 AM", "02:00 PM", "04:00 PM"]
   },
   {
     id: 63,
@@ -688,9 +688,9 @@ const doctors = [
     rating: 4.8,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/34.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 3:00 PM",
-    timeSlots: ["08:30 AM", "11:00 AM", "01:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
+    workingHours: "10:00 AM - 4:00 PM",
+    timeSlots: ["08:30 AM", "11:00 AM", "01:30 PM", "03:30 PM"]
   },
   {
     id: 64,
@@ -699,9 +699,9 @@ const doctors = [
     rating: 4.6,
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM"]
+    workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "7:00 PM - 4:00 AM",
+    timeSlots: ["09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
     id: 65,
@@ -710,9 +710,9 @@ const doctors = [
     rating: 4.7,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/24.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
+    workingHours: "8:00 AM - 2:00 PM",
+    timeSlots: ["09:00 AM", "11:30 AM", "01:00 PM"]
   },
   {
     id: 66,
@@ -721,20 +721,20 @@ const doctors = [
     rating: 4.6,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/57.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Monday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "2:00 PM - 8:00 PM",
+    timeSlots: ["02:00 PM", "04:00 PM", "06:00 PM", "08:00 PM"]
   },
   {
     id: 67,
     name: "Dr. Hany Hassan",
-    specialty: "ENT (Ear, Nose, Throat)",
+    specialty: "E.N.T",
     rating: 4.8,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/42.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:00 PM"]
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Saturday"],
+    workingHours: "7:00 PM - 4:00 AM",
+    timeSlots: ["07:30 PM", "10:00 PM", "12:30 AM", "03:00 AM"]
   },
   {
     id: 68,
@@ -744,8 +744,8 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/33.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["10:00 AM", "12:30 PM", "02:30 PM"]
+    workingHours: "6:00 AM - 12:00 PM",
+    timeSlots: ["06:30 AM", "08:30 AM", "10:30 AM"]
   },
   {
     id: 69,
@@ -755,7 +755,7 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/48.jpg",
     workingDays: ["Sunday", "Monday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: "10:00 AM - 4:00 PM",
     timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM"]
   },
   {
@@ -766,8 +766,8 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/23.jpg",
     workingDays: ["Monday", "Wednesday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    workingHours: "8:00 PM - 2:00 AM",
+    timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
     id: 71,
@@ -777,8 +777,8 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/52.jpg",
     workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    workingHours: "6:00 AM - 12:00 PM",
+    timeSlots: ["06:30 AM", "08:30 AM", "10:00 AM"]
   },
   {
     id: 72,
@@ -788,19 +788,19 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/49.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:30 PM"]
+    workingHours: "1:00 PM - 7:00 PM",
+    timeSlots: ["01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
     id: 73,
     name: "Dr. Sanaa Hassan",
-    specialty: "ENT (Ear, Nose, Throat)",
+    specialty: "E.N.T",
     rating: 4.7,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/39.jpg",
     workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:00 PM"]
+    workingHours: "7:00 PM - 4:00 AM",
+    timeSlots: ["07:00 PM", "09:30 PM", "12:00 AM"]
   },
   {
     id: 74,
@@ -810,8 +810,8 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/28.jpg",
     workingDays: ["Sunday", "Wednesday", "Saturday"],
-    workingHours: "9:00 AM - 4:30 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM"]
+    workingHours: "8:00 PM - 2:00 AM",
+    timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
     id: 75,
@@ -821,8 +821,8 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/56.jpg",
     workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    workingHours: "7:00 PM - 4:00 AM",
+    timeSlots: ["07:30 PM", "09:30 PM", "12:00 AM"]
   },
   {
     id: 76,
@@ -843,8 +843,8 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/58.jpg",
     workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:30 PM", "02:30 PM"]
+    workingHours: "7:00 PM - 4:00 AM",
+    timeSlots: ["07:30 PM", "10:00 PM", "12:30 AM"]
   },
   {
     id: 78,
@@ -854,8 +854,8 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/60.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    workingHours: "8:00 PM - 2:00 AM",
+    timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
     id: 79,
@@ -876,8 +876,8 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/51.jpg",
     workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:30 PM", "03:00 PM"]
+    workingHours: "7:00 PM - 4:00 AM",
+    timeSlots: ["09:00 PM", "11:30 PM", "02:00 AM"]
   },
   {
     id: 81,
@@ -886,9 +886,9 @@ const doctors = [
     rating: 4.6,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/38.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM"]
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Friday"],
+    workingHours: "7:00 PM - 3:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
     id: 82,
@@ -897,9 +897,9 @@ const doctors = [
     rating: 4.8,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/62.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "01:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
+    workingHours: "8:00 AM - 4:00 PM",
+    timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
     id: 83,
@@ -908,9 +908,9 @@ const doctors = [
     rating: 4.7,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/42.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "2:00 PM - 10:00 PM",
+    timeSlots: ["02:00 PM", "04:00 PM", "06:00 PM", "08:00 PM", "10:00 PM"]
   },
   {
     id: 84,
@@ -919,20 +919,20 @@ const doctors = [
     rating: 4.9,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/24.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
     workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "03:00 PM"]
+    timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
     id: 85,
     name: "Dr. Fady Ghonim",
-    specialty: "ENT (Ear, Nose, Throat)",
+    specialty: "E.N.T",
     rating: 4.5,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/39.jpg",
-    workingDays: ["Sunday", "Monday", "Wednesday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Sunday", "Monday", "Wednesday", "Thursday"],
+    workingHours: "9:00 AM - 9:00 PM",
+    timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM", "06:00 PM", "09:00 PM"]
   },
   {
     id: 86,
@@ -941,9 +941,9 @@ const doctors = [
     rating: 4.7,
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/67.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "1:00 PM - 9:00 PM",
+    timeSlots: ["01:00 PM", "03:00 PM", "05:00 PM", "07:00 PM", "09:00 PM"]
   },
   {
     id: 87,
@@ -952,9 +952,9 @@ const doctors = [
     rating: 4.8,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/60.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
+    workingHours: "9:00 AM - 6:00 PM",
+    timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
     id: 88,
@@ -963,9 +963,9 @@ const doctors = [
     rating: 4.9,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/63.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM"]
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Saturday"],
+    workingHours: "9:00 AM - 5:00 PM",
+    timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
     id: 89,
@@ -974,9 +974,9 @@ const doctors = [
     rating: 4.7,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/35.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
+    workingHours: "9:00 AM - 9:00 PM",
+    timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM", "06:00 PM", "09:00 PM"]
   },
   {
     id: 90,
@@ -985,9 +985,9 @@ const doctors = [
     rating: 4.6,
     location: "Suez",
     image: "https://randomuser.me/api/portraits/women/66.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["10:00 AM", "12:30 PM", "02:30 PM"]
+    workingDays: ["Monday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "8:00 AM - 4:00 PM",
+    timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
     id: 91,
@@ -996,9 +996,9 @@ const doctors = [
     rating: 4.7,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/41.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:00 PM"]
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Saturday"],
+    workingHours: "2:00 PM - 10:00 PM",
+    timeSlots: ["02:00 PM", "04:00 PM", "06:00 PM", "08:00 PM", "10:00 PM"]
   },
   {
     id: 92,
@@ -1007,9 +1007,9 @@ const doctors = [
     rating: 4.8,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/44.jpg",
-    workingDays: ["Monday", "Wednesday", "Saturday"],
+    workingDays: ["Monday", "Wednesday", "Saturday", "Sunday"],
     workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:30 PM", "03:00 PM"]
+    timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM", "06:00 PM", "09:00 PM"]
   },
   {
     id: 93,
@@ -1018,20 +1018,20 @@ const doctors = [
     rating: 4.6,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/52.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
+    workingHours: "9:00 AM - 6:00 PM",
+    timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
     id: 94,
     name: "Dr. Rania Mostafa",
-    specialty: "ENT (Ear, Nose, Throat)",
+    specialty: "E.N.T",
     rating: 4.7,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/61.jpg",
-    workingDays: ["Monday", "Wednesday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Saturday", "Sunday"],
+    workingHours: "7:00 PM - 3:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
     id: 95,
@@ -1040,9 +1040,9 @@ const doctors = [
     rating: 4.5,
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/58.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM"]
+    workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "3:00 PM - 11:00 PM",
+    timeSlots: ["03:00 PM", "05:00 PM", "07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
     id: 96,
@@ -1051,9 +1051,9 @@ const doctors = [
     rating: 4.8,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/50.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Monday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "10:00 AM - 6:00 PM",
+    timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM", "06:00 PM"]
   },
   {
     id: 97,
@@ -1062,20 +1062,20 @@ const doctors = [
     rating: 4.7,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/64.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
+    workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
     workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
     id: 98,
     name: "Dr. Mohamed Ali",
-    specialty: "ENT (Ear, Nose, Throat)",
+    specialty: "E.N.T",
     rating: 4.5,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/49.jpg",
-    workingDays: ["Sunday", "Monday", "Wednesday"],
+    workingDays: ["Sunday", "Monday", "Wednesday", "Thursday"],
     workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
     id: 99,
@@ -1084,9 +1084,9 @@ const doctors = [
     rating: 4.8,
     location: "Suez",
     image: "https://randomuser.me/api/portraits/women/59.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:00 PM"]
+    workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
+    workingHours: "8:00 AM - 4:00 PM",
+    timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
     id: 100,
@@ -1095,218 +1095,218 @@ const doctors = [
     rating: 4.7,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/47.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
+    workingHours: "7:00 PM - 3:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
     id: 101,
     name: "Dr. Hossam Mahmoud",
     specialty: "Orthopedics",
-    rating: 4.8,
+    rating  : 4.8,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/43.jpg",
-    workingDays: ["Monday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
+    workingHours: "8:00 AM - 2:00 PM",
+    timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM"]
   },
   {
     id: 102,
     name: "Dr. Amal El-Sayed",
     specialty: "Dermatology",
-    rating: 4.9,
+    rating  : 4.9,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/69.jpg",
-    workingDays: ["Sunday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Sunday", "Monday", "Wednesday", "Friday", "Saturday"],
+    workingHours: "7:00 PM - 3:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
     id: 103,
     name: "Dr. Ali Mohamed",
     specialty: "Cardiology",
-    rating: 4.7,
+    rating  : 4.7,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/57.jpg",
-    workingDays: ["Monday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "3:00 PM - 9:00 PM",
+    timeSlots: ["03:00 PM", "05:00 PM", "07:00 PM", "09:00 PM"]
   },
   {
     id: 104,
     name: "Dr. Asma Ibrahim",
     specialty: "Pediatrics",
-    rating: 4.8,
+    rating  : 4.8,
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/60.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 4:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Thursday", "Friday", "Sunday"],
+    workingHours: "8:00 AM - 4:00 PM",
+    timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
     id: 105,
     name: "Dr. Mohamed El-Desouki",
     specialty: "Ophthalmology",
-    rating: 4.6,
+    rating  : 4.6,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/55.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:30 PM"]
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "12:00 PM - 6:00 PM",
+    timeSlots: ["12:00 PM", "02:00 PM", "04:00 PM", "06:00 PM"]
   },
   {
     id: 106,
     name: "Dr. Fatima Mostafa",
     specialty: "Psychiatry",
-    rating: 4.7,
+    rating  : 4.7,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
-    workingDays: ["Monday", "Wednesday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Saturday", "Sunday", "Tuesday"],
+    workingHours: "7:00 PM - 3:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
     id: 107,
     name: "Dr. Youssef Abdel Fattah",
     specialty: "Orthopedics",
-    rating: 4.6,
+    rating  : 4.6,
     location: "Suez",
     image: "https://randomuser.me/api/portraits/men/51.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "2:00 PM - 8:00 PM",
+    timeSlots: ["02:00 PM", "04:00 PM", "06:00 PM", "08:00 PM"]
   },
   {
     id: 108,
     name: "Dr. Reem Al-Hassan",
     specialty: "Dermatology",
-    rating: 4.8,
+    rating  : 4.8,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/47.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
     workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "02:30 PM"]
+    timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
     id: 109,
     name: "Dr. Khaled El-Sayed",
-    specialty: "ENT (Ear, Nose, Throat)",
-    rating: 4.7,
+    specialty: "E.N.T",
+    rating  : 4.7,
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/40.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "7:00 PM - 4:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM", "04:00 AM"]
   },
   {
     id: 110,
     name: "Dr. Samira Fathy",
     specialty: "Cardiology",
-    rating: 4.6,
+    rating  : 4.6,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/43.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
+    workingHours: "10:00 AM - 4:00 PM",
+    timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
     id: 111,
     name: "Dr. Tarek El-Tantawy",
     specialty: "Psychiatry",
-    rating: 4.5,
+    rating  : 4.5,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/56.jpg",
-    workingDays: ["Monday", "Tuesday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["10:00 AM", "12:30 PM", "03:00 PM"]
+    workingDays: ["Monday", "Tuesday", "Saturday", "Sunday", "Thursday"],
+    workingHours: "7:00 PM - 3:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
     id: 112,
     name: "Dr. Mohamad Awad",
     specialty: "Pediatrics",
-    rating: 4.7,
+    rating  : 4.7,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/54.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:30 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
+    workingHours: "8:00 AM - 4:00 PM",
+    timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
     id: 113,
     name: "Dr. Dina Abdel-Rahman",
     specialty: "Orthopedics",
-    rating: 4.8,
+    rating  : 4.8,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/57.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "7:00 PM - 3:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
     id: 114,
     name: "Dr. Maged El-Said",
     specialty: "Cardiology",
-    rating: 4.6,
+    rating  : 4.6,
     location: "Suez",
     image: "https://randomuser.me/api/portraits/men/59.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "12:00 PM", "02:00 PM"]
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
+    workingHours: "10:00 AM - 4:00 PM",
+    timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
     id: 115,
     name: "Dr. Karim Abdel Rahman",
     specialty: "Psychiatry",
-    rating: 4.7,
+    rating  : 4.7,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/60.jpg",
-    workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday", "Monday"],
+    workingHours: "7:00 PM - 3:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
     id: 116,
     name: "Dr. Hanan Gharib",
     specialty: "Pediatrics",
-    rating: 4.9,
+    rating  : 4.9,
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/62.jpg",
-    workingDays: ["Monday", "Tuesday", "Wednesday"],
+    workingDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
     workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:00 AM", "02:00 PM"]
+    timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
     id: 117,
     name: "Dr. Osama Fathi",
-    specialty: "ENT (Ear, Nose, Throat)",
-    rating: 4.6,
+    specialty: "E.N.T",
+    rating  : 4.6,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/42.jpg",
-    workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "11:30 AM", "02:00 PM"]
+    workingDays: ["Monday", "Thursday", "Saturday", "Sunday", "Tuesday"],
+    workingHours: "7:00 PM - 3:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
     id: 118,
     name: "Dr. Mona Aboud",
     specialty: "Ophthalmology",
-    rating: 4.7,
+    rating  : 4.7,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/54.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["10:00 AM", "12:00 PM", "02:30 PM"]
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Saturday", "Monday"],
+    workingHours: "7:00 PM - 4:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM", "04:00 AM"]
   },
   {
     id: 119,
     name: "Dr. Samer Gamil",
     specialty: "Cardiology",
-    rating: 4.5,
+    rating  : 4.5,
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/46.jpg",
-    workingDays: ["Monday", "Wednesday", "Friday"],
+    workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
     workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
+    timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
     id: 120,
@@ -1315,10 +1315,10 @@ const doctors = [
     rating: 4.8,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
-    workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM"]
-  },
+    workingDays: ["Sunday", "Tuesday", "Thursday", "Friday", "Saturday"],
+    workingHours: "7:00 PM - 4:00 AM",
+    timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM", "04:00 AM"]
+  }
 ];
 
 export default doctors;
