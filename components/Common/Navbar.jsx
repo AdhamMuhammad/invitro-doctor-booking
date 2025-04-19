@@ -1,45 +1,48 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
       <nav className="px-8 py-6 flex items-center justify-between">
-
-        <a href="#" className="text-2xl font-bold text-blue-800">
+        <Link to="/" className="text-2xl font-bold text-blue-800">
           InVitro Health
-        </a>
+        </Link>
 
+        {/* Desktop Menu */}
         <ul className="hidden md:flex md:items-center md:space-x-10">
           <li>
-            <a
-              href="#doctors"
+            <Link
+              to="/"
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#doctors"
+            <Link
+              to="/doctors"
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               Doctors
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#appointments"
+            <Link
+              to="/appointments"
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
             >
               My Appointments
-            </a>
+            </Link>
           </li>
         </ul>
 
+        {/* Hamburger Menu */}
         <button
           onClick={toggleMenu}
           className="md:hidden text-gray-700 focus:outline-none"
@@ -70,26 +73,36 @@ const Navbar = () => {
         </button>
       </nav>
 
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <ul className="flex flex-col items-center py-4 space-y-4">
             <li>
-              <a
-                href="doctors"
-                onClick={() => setMenuOpen(false)}
+              <Link
+                to="/"
+                onClick={closeMenu}
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/doctors"
+                onClick={closeMenu}
                 className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >
                 Doctors
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#appointments"
-                onClick={() => setMenuOpen(false)}
+              <Link
+                to="/appointments"
+                onClick={closeMenu}
                 className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >
                 My Appointments
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
