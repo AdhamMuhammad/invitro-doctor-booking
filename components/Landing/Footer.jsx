@@ -6,7 +6,7 @@ const Footer = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <footer className="bg-[#F3FFFE] text-white py-16">
+    <footer className="bg-[#F3FFFE] shadow-sm text-white py-16">
       <div className="px-8">
         {/* Footer Content Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">

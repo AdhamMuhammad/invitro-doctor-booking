@@ -5,7 +5,7 @@ import quoteIcon from "../../assets/quote.png";
 function QuoteSection() {
   return (
     <section className="py-20 px-6">
-      <article className="max-w-[1240px] px-8 py-12 sm:py-14 md:py-8 mx-auto rounded-2xl bg-blue-50">
+      <article className="max-w-[1240px] px-8 py-12 sm:py-14 md:py-8 mx-auto rounded-2xl shadow-xl bg-blue-50">
         <div className="flex flex-col items-center text-center md:items-start md:text-left gap-3 mb-6">
           <figure className="flex flex-row gap-3">
             <img

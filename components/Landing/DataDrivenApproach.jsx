@@ -19,7 +19,7 @@ const dataPoints = [
 function DataDrivenSection() {
   return (
     <section className="py-20 px-6">
-      <div className="max-w-[1400px] bg-[#F3FFFE] px-8 py-12 sm:py-14 md:py-8 mx-auto bg-gradient rounded-2xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-[1400px] bg-[#F3FFFE] shadow-xl px-8 py-12 sm:py-14 md:py-8 mx-auto bg-gradient rounded-2xl mx-auto flex flex-col md:flex-row items-center justify-between">
         
         {/* Left Side */}
         <div className="max-w-2xl md:w-1/2 mb-12 md:mb-0">
