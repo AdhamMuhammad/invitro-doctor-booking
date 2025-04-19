@@ -7,7 +7,7 @@ const dataPoints = [
     description: "Successfully booked by patients every month through our platform.",
   },
   {
-    title: "500+ Verified Doctors",
+    title: "100+ Verified Doctors",
     description: "Carefully selected across multiple specialties, ensuring trust and expertise.",
   },
   {
@@ -20,8 +20,7 @@ function DataDrivenSection() {
   return (
     <section className="py-20 px-6">
       <div className="max-w-[1400px] bg-[#F3FFFE] shadow-xl px-8 py-12 sm:py-14 md:py-8 mx-auto bg-gradient rounded-2xl mx-auto flex flex-col md:flex-row items-center justify-between">
-        
-        {/* Left Side */}
+
         <div className="max-w-2xl md:w-1/2 mb-12 md:mb-0">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-800 mb-6 leading-tight">
             A Data-Driven Approach to Better Healthcare
@@ -34,7 +33,6 @@ function DataDrivenSection() {
           <HeroButton text={"View my appointments"}/>
         </div>
 
-        {/* Right Side */}
         <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-8">
           {dataPoints.map((point, index) => (
             <div key={index} className="flex items-start">

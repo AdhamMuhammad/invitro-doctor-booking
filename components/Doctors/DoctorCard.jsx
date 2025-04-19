@@ -1,8 +1,7 @@
-function DoctorCard({ doctor }) {
+function DoctorCard({ doctor, onBook }) {
   const today = new Date();
   const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const todayName = weekdays[today.getDay()];
-
   const isAvailableToday = doctor.workingDays.includes(todayName);
 
   return (
@@ -10,6 +9,7 @@ function DoctorCard({ doctor }) {
       <img
         src={doctor.image}
         alt={doctor.name}
+        loading="lazy"
         className="w-24 h-24 rounded-full object-cover"
       />
       <h2 className="text-lg font-bold mt-4">{doctor.name}</h2>
@@ -26,16 +26,16 @@ function DoctorCard({ doctor }) {
         {isAvailableToday ? "Available Today" : "Not Available Today"}
       </div>
 
-      {/* Rating */}
       <div className="flex items-center mt-2">
-        <span className="text-yellow-500">{'★'.repeat(Math.floor(doctor.rating))}</span>
+        <span className="text-yellow-500">{'★'.repeat(Math.round(doctor.rating))}</span>
         <span className="text-gray-400 ml-1">{doctor.rating}</span>
       </div>
 
       <button
         disabled={!isAvailableToday}
+        onClick={onBook}
         className={`mt-4 w-full py-2 rounded-lg font-medium transition 
-          ${isAvailableToday ? "bg-blue-500 hover:bg-blue-600 text-white" : "bg-gray-300 text-gray-500 cursor-not-allowed"}
+          ${isAvailableToday ? "bg-blue-500 hover:bg-blue-600 text-white" : "bg-gray-300 text-gray-500"}
         `}
       >
         Book Appointment

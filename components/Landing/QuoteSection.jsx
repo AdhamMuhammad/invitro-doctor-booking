@@ -11,6 +11,7 @@ function QuoteSection() {
             <img
               src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg"
               alt="Dr. Virgil C. Adams"
+              loading="lazy"
               className="w-20 h-20 rounded-full object-cover"
               />
             <img

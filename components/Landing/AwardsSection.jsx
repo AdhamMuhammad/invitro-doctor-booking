@@ -42,6 +42,7 @@ function AwardsSection() {
                 <img
                   src={award.image}
                   alt={award.title}
+                  loading="lazy"
                   className="w-24 h-24 object-cover rounded-full border-4 border-blue-500"
                 />
               </div>

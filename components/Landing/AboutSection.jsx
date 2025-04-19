@@ -62,6 +62,7 @@ function AboutSection() {
           <div className="w-full md:w-3/4">
             <div className="flex flex-col items-center">
               <div
+                loading="lazy"
                 className="w-full h-96 bg-cover bg-center rounded-xl mb-6 transform transition-transform duration-200 ease-in-out hover:scale-103"
                 style={{
                   backgroundImage: `url(${aboutInfo[activeCard].image})`,

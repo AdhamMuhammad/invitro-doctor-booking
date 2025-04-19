@@ -107,6 +107,7 @@ function FAQSection() {
                   <img
                     src={faq.avatar}
                     alt={faq.name}
+                    loading="lazy"
                     className="w-12 h-12 rounded-full object-cover mt-1"
                     />
                   <div className="flex flex-col">

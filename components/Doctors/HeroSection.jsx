@@ -2,7 +2,7 @@ import HeroButton from '../Common/HeroButton';
 
 const HeroSection = () => {
   return (
-    <section className="bg-[#F3FFFE] px-6">
+    <section className="px-6">
       <div className="max-w-[1400px] h-screen mx-auto flex flex-col justify-center items-center text-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight text-blue-800">
           Your Health, Our Priority
