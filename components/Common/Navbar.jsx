@@ -75,7 +75,7 @@ const Navbar = () => {
           <ul className="flex flex-col items-center py-4 space-y-4">
             <li>
               <a
-                href="#doctors"
+                href="doctors"
                 onClick={() => setMenuOpen(false)}
                 className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
               >

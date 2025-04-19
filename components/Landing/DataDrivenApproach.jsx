@@ -1,5 +1,5 @@
 import checkIcon from "../../assets/check.png";
-import HeroButton from "./HeroButton";
+import HeroButton from "../Common/HeroButton";
 
 const dataPoints = [
   {

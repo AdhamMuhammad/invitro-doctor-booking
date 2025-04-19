@@ -1,5 +1,5 @@
 import checkIcon from "../../assets/verified-check.png";
-import HeroButton from "./HeroButton";
+import HeroButton from "../Common/HeroButton";
 
 const features = [
   "Access hundreds of certified doctors across multiple specialties.",

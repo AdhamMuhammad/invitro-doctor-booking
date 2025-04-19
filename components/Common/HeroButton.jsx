@@ -1,5 +1,5 @@
 const HeroButton = ({
-  text,
+  text = "",
   className = "",
   type = "button",
   onClick,
