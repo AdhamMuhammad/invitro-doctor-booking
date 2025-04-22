@@ -8,7 +8,7 @@ const HeroButton = ({
   target,
 }) => {
   return (
-    <div className="flex items-center h-full">
+    <div className="mx-auto w-full">
       {isLink ? (
         <a
           href={linkUrl}
@@ -21,7 +21,7 @@ const HeroButton = ({
         <button
           onClick={onClick}
           type={type}
-          className={`bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition ${className}`}
+          className={`bg-blue-600 hover:bg-blue-700 text-white w-full md:w-auto font-semibold py-3 px-6 rounded-lg transition ${className}`}
         >
           {text}
         </button>

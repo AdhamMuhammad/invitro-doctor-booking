@@ -22,7 +22,7 @@ function HeroSection() {
             Search for trusted healthcare professionals and book appointments with ease.
             Fast, simple, and accessible anywhere.
           </p>
-          <HeroButton text={"Browse doctors"}/>
+          <HeroButton text={"Browse doctors"} isLink isInternal linkUrl="/doctors"/>
         </div>
 
         <div className="max-w-xl md:w-1/2 mt-12 md:mt-0 flex justify-center">

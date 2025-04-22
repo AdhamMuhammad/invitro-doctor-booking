@@ -30,7 +30,7 @@ function DataDrivenSection() {
             We constantly analyze feedback, appointment trends, and doctor performance
             to ensure you get the best possible care.
           </p>
-          <HeroButton text={"View my appointments"}/>
+          <HeroButton text={"View my appointments"} isLink isInternal linkUrl="/appointments"/>
         </div>
 
         <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-8">

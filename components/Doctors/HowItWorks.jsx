@@ -54,7 +54,7 @@ function HowItWorks() {
             Booking an appointment with trusted healthcare professionals has never been easier. Follow these simple steps and get started today.
           </p>
           <div className="mx-auto max-w-200 w-full">
-            <HeroButton text="View my appointments" className='w-full lg:w-auto' />
+            <HeroButton text="View my appointments" isLink isInternal linkUrl="/appointments" />
           </div>
         </div>
 
