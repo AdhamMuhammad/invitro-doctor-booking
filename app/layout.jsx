@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Common/Navbar';
 import Footer from '../components/Common/Footer';
-import { useAppointmentsStore } from '../components/Appointments/appointmentsStore'; // adjust if needed
+import { useAppointmentsStore } from './stores/appointmentsStore';
 
 export default function Layout() {
   useEffect(() => {
