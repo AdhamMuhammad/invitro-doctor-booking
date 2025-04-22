@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-// About section content
 const aboutInfo = [
   {
     title: "Foundation",

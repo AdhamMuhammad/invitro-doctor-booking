@@ -9,9 +9,9 @@ const Footer = () => {
     <section className="pt-16">
       <footer className="bg-[#F3FFFE] shadow-sm text-white py-16">
         <div className="px-8">
-          {/* Footer Content Section */}
+
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-            {/* Company Name and Description */}
+
             <div className="text-center md:text-left">
               <h2 className="text-3xl font-bold mb-4 text-blue-800">InVitro Health</h2>
               <p className="text-gray-400">
@@ -19,7 +19,7 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* Footer Links */}
+
             <div className="flex flex-col md:flex-row gap-8 text-center md:text-left">
               <div>
                 <h4 className="font-semibold text-blue-800 mb-4">Company</h4>
@@ -121,7 +121,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Footer Bottom Section */}
           <div className="mt-12 pt-6 text-center text-blue-800 font-semibold text-md">
             <p>&copy; {new Date().getFullYear()} InVitro Health. All rights reserved.</p>
           </div>

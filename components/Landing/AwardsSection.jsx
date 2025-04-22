@@ -3,19 +3,19 @@ const awards = [
     title: "Best Healthcare Platform 2025",
     description:
       "Awarded for providing the most reliable and accessible healthcare services.",
-    image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg", // Customer service theme
+    image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
   },
   {
     title: "Innovation in Telemedicine",
     description:
       "Recognized for pioneering telemedicine solutions for easy online consultations.",
-    image: "https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg", // Tech and innovation related
+    image: "https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg",
   },
   {
     title: "Customer Satisfaction Excellence",
     description:
       "Awarded for delivering an exceptional user experience and customer support.",
-    image: "https://images.pexels.com/photos/3182824/pexels-photo-3182824.jpeg", // Customer support theme
+    image: "https://images.pexels.com/photos/3182824/pexels-photo-3182824.jpeg",
   },
 ];
 

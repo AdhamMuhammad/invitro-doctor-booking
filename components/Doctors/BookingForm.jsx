@@ -41,13 +41,12 @@ export default function BookingForm({ doctor, onClose }) {
     return doctor.workingDays.includes(dayName);
   };
 
-  // Ensure time is properly formatted and AM/PM is handled
   const formatAMPM = (date) => {
     let hours = date.getHours();
     let minutes = date.getMinutes();
     const ampm = hours >= 12 ? 'PM' : 'AM';
     hours = hours % 12;
-    hours = hours ? hours : 12; // 0 becomes 12
+    hours = hours ? hours : 12;
     minutes = minutes < 10 ? '0' + minutes : minutes;
     return `${hours}:${minutes} ${ampm}`;
   };
@@ -103,12 +102,11 @@ export default function BookingForm({ doctor, onClose }) {
     setSubmitting(true);
     setError("");
 
-    await new Promise((res) => setTimeout(res, 600)); // mimic async save
+    await new Promise((res) => setTimeout(res, 600));
 
     const [hourMinute, ampm] = formData.appointmentTime.split(" ");
     let [hours, minutes] = hourMinute.split(":").map(Number);
 
-    // Fix AM/PM swap issue
     if (ampm === "PM" && hours !== 12) hours += 12;
     if (ampm === "AM" && hours === 12) hours = 0;
 
@@ -122,11 +120,9 @@ export default function BookingForm({ doctor, onClose }) {
       hour12: true,
     });
 
-    // Format first and last names
     const formattedFirstName = formData.firstName.charAt(0).toUpperCase() + formData.firstName.slice(1).toLowerCase().trim();
     const formattedLastName = formData.lastName.charAt(0).toUpperCase() + formData.lastName.slice(1).toLowerCase().trim();
 
-    // Trim and validate email
     const formattedEmail = formData.email.trim().toLowerCase();
 
     const newAppointment = {
@@ -149,7 +145,7 @@ export default function BookingForm({ doctor, onClose }) {
 
   return (
     <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50 backdrop-blur-sm">
-      {/* Main Booking Popup */}
+
       {!showConfirmation && (
         <div className="bg-white p-8 rounded-xl shadow-2xl w-96 relative">
           <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-gray-600">✕</button>
@@ -161,7 +157,7 @@ export default function BookingForm({ doctor, onClose }) {
           {error && <div className="mb-4 p-2 bg-red-100 text-red-600 text-sm rounded">{error}</div>}
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            {[ // Input fields
+            {[
               { label: "First Name", type: "text", field: "firstName" },
               { label: "Last Name", type: "text", field: "lastName" },
               { label: "Phone Number", type: "tel", field: "phoneNumber", onChange: handlePhoneChange },
@@ -223,7 +219,6 @@ export default function BookingForm({ doctor, onClose }) {
         </div>
       )}
 
-      {/* Confirmation Popup */}
       {showConfirmation && confirmedAppointment && (
         <div className="bg-white p-6 rounded-lg text-center shadow-xl w-96">
           <h3 className="text-lg font-semibold mb-2">Appointment Confirmed!</h3>

@@ -12,18 +12,17 @@ function AppointmentsPage() {
   const [editingDoctorSlots, setEditingDoctorSlots] = useState([]);
   const [editingDoctorDaysOff, setEditingDoctorDaysOff] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
-  const [now, setNow] = useState(new Date()); // 🆕 add "now" state
+  const [now, setNow] = useState(new Date());
 
   useEffect(() => {
     hydrate();
   }, [hydrate]);
 
-  // 🆕 Auto-refresh "now" every minute
   useEffect(() => {
     const interval = setInterval(() => {
       setNow(new Date());
-    }, 60000); // 60,000ms = 1 minute
-    return () => clearInterval(interval); // cleanup on unmount
+    }, 60000);
+    return () => clearInterval(interval);
   }, []);
 
   const parseDateTime = (dateTimeStr) => {
@@ -111,7 +110,7 @@ function AppointmentsPage() {
     (appointments || []).filter((appt) => {
       try {
         const apptDate = parseDateTime(appt.dateTime);
-        return past ? apptDate < now : apptDate >= now; // 🆕 use "now" state
+        return past ? apptDate < now : apptDate >= now;
       } catch {
         return false;
       }

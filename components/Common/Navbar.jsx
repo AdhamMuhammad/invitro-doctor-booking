@@ -14,7 +14,6 @@ const Navbar = () => {
           InVitro Health
         </Link>
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex md:items-center md:space-x-10">
           <li>
             <Link
@@ -42,7 +41,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Hamburger Menu */}
         <button
           onClick={toggleMenu}
           className="md:hidden text-gray-700 focus:outline-none"
@@ -73,7 +71,6 @@ const Navbar = () => {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <ul className="flex flex-col items-center py-4 space-y-4">

@@ -22,21 +22,18 @@ const EmptyStar = () => (
 
 function StarRating({ rating }) {
   const stars = [];
-  const fullStars = Math.floor(rating); // Full stars
-  const halfStar = rating % 1 >= 0.5 ? 1 : 0; // Check for half star
-  const emptyStars = 5 - fullStars - halfStar; // Remaining empty stars
+  const fullStars = Math.floor(rating);
+  const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+  const emptyStars = 5 - fullStars - halfStar;
 
-  // Add full stars
   for (let i = 0; i < fullStars; i++) {
     stars.push(<FullStar key={`full-${i}`} className="text-yellow-500" />);
   }
 
-  // Add half star if necessary
   if (halfStar) {
     stars.push(<HalfStar key="half" className="text-yellow-500" />);
   }
 
-  // Add empty stars to fill up to 5 stars
   for (let i = 0; i < emptyStars; i++) {
     stars.push(<EmptyStar key={`empty-${i}`} className="text-yellow-300" />);
   }

@@ -127,7 +127,7 @@ export default function AppointmentCard({
                 selected={editDate ? new Date(editDate) : null}
                 onChange={(date) => {
                   setEditDate(date ? date.toISOString().split('T')[0] : '');
-                  setEditTime(''); // Reset time to force reselection
+                  setEditTime('');
                 }}
                 minDate={new Date()}
                 filterDate={isWorkingDay}
