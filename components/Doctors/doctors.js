@@ -6,9 +6,12 @@ const doctors = [
     rating: 4.8,
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
-    workingDays: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
-    workingHours: "6:00 AM - 12:00 PM",
-    timeSlots: ["06:30 AM", "09:00 AM", "11:30 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
+    workingDays: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    workingHours: {
+      start: "12:30 PM",
+      end: "11:30 PM"
+      },
+    timeSlots: ["12:30 PM", "1:30 PM", "2:30 PM", "3:30 PM", "4:30 PM", "05:30 PM", "06:30 PM", "07:30 PM", "8:30 PM", "9:30 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
   },
   {
     id: 2,
@@ -17,8 +20,11 @@ const doctors = [
     rating: 4.5,
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
-    workingDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "7:00 AM - 3:00 PM",
+    workingDays: ["Tuesday", "Friday"],
+    workingHours: {
+      start: "7:00 AM",
+      end: "3:00 PM"
+      },
     timeSlots: ["07:30 AM", "09:30 AM", "11:30 AM", "01:00 PM", "02:30 PM", "04:00 PM"]
   },
   {
@@ -29,7 +35,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
     workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "8:00 AM - 2:00 PM",
+    workingHours: {
+      start: "8:00 AM",
+      end: "2:00 PM"
+      },
     timeSlots: ["08:30 AM", "10:00 AM", "11:30 AM", "01:00 PM", "02:30 PM"]
   },
   {
@@ -40,7 +49,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
     workingDays: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
-    workingHours: "12:00 PM - 6:00 PM",
+    workingHours: {
+      start: "12:00 PM",
+      end: "6:00 PM"
+      },
     timeSlots: ["12:30 PM", "02:00 PM", "03:30 PM", "05:00 PM"]
   },
   {
@@ -51,7 +63,10 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/48.jpg",
     workingDays: ["Monday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "10:00 AM - 4:00 PM",
+    workingHours: {
+      start: "10:00 AM",
+      end: "4:00 PM"
+      },
     timeSlots: ["10:30 AM", "12:30 PM", "02:00 PM", "03:30 PM"]
   },
   {
@@ -62,7 +77,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/51.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Saturday"],
-    workingHours: "2:00 PM - 8:00 PM",
+    workingHours: {
+      start: "2:00 PM",
+      end: "8:00 PM"
+      },
     timeSlots: ["02:30 PM", "04:00 PM", "05:30 PM", "07:00 PM"]
   },
   {
@@ -73,7 +91,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/52.jpg",
     workingDays: ["Monday", "Tuesday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "7:00 AM - 1:00 PM",
+    workingHours: {
+      start: "7:00 AM",
+      end: "1:00 PM"
+      },
     timeSlots: ["07:30 AM", "09:00 AM", "10:30 AM", "12:00 PM"]
   },
   {
@@ -84,7 +105,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/36.jpg",
     workingDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "10:00 AM - 6:00 PM",
+    workingHours: {
+      start: "10:00 AM",
+      end: "6:00 PM"
+      },
     timeSlots: ["10:30 AM", "12:00 PM", "02:30 PM", "04:00 PM"]
   },
   {
@@ -95,7 +119,10 @@ const doctors = [
     location: "Suez",
     image: "https://randomuser.me/api/portraits/women/41.jpg",
     workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "9:30 AM - 5:30 PM",
+    workingHours: {
+      start: "9:30 AM",
+      end: "5:30 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "01:30 PM", "03:30 PM", "05:00 PM"]
   },
   {
@@ -106,7 +133,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/25.jpg",
     workingDays: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
-    workingHours: "7:00 AM - 3:00 PM",
+    workingHours: {
+      start: "7:00 AM",
+      end: "3:00 PM"
+      },
     timeSlots: ["07:30 AM", "09:00 AM", "10:30 AM", "12:00 PM", "01:30 PM", "03:00 PM"]
   },
   {
@@ -117,8 +147,11 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/23.jpg",
     workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "8:00 AM - 4:00 PM",
-    timeSlots: ["08:30 AM", "10:00 AM", "12:00 PM", "02:00 PM"]
+    workingHours: {
+      start: "8:00 AM",
+      end: "4:00 PM"
+      },
+    timeSlots: ["08:30 AM", "10:00 AM", "12:00 PM", "02:00 PM", "3:30 PM"]
   },
   {
     id: 12,
@@ -128,7 +161,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/34.jpg",
     workingDays: ["Tuesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    workingHours: "2:00 PM - 8:00 PM",
+    workingHours: {
+      start: "2:00 PM",
+      end: "8:00 PM"
+      },
     timeSlots: ["02:30 PM", "04:00 PM", "05:30 PM", "07:00 PM"]
   },
   {
@@ -139,7 +175,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/20.jpg",
     workingDays: ["Sunday", "Monday", "Tuesday", "Thursday", "Friday"],
-    workingHours: "6:30 AM - 2:30 PM",
+    workingHours: {
+      start: "6:30 AM",
+      end: "2:30 PM"
+      },
     timeSlots: ["07:00 AM", "09:00 AM", "10:30 AM", "12:30 PM", "02:00 PM"]
   },
   {
@@ -150,7 +189,10 @@ const doctors = [
     location: "Suez",
     image: "https://randomuser.me/api/portraits/men/47.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
-    workingHours: "10:00 AM - 6:00 PM",
+    workingHours: {
+      start: "10:00 PM",
+      end: "6:00 AM"
+      },
     timeSlots: ["10:30 AM", "12:00 PM", "02:00 PM", "03:30 PM", "05:00 PM"]
   },
   {
@@ -161,7 +203,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/40.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "8:30 AM - 4:30 PM",
+    workingHours: {
+      start: "8:30 AM",
+      end: "4:30 PM"
+      },
     timeSlots: ["08:30 AM", "10:30 AM", "12:00 PM", "02:30 PM", "04:00 PM"]
   },
   {
@@ -172,7 +217,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/50.jpg",
     workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "7:00 AM - 3:00 PM",
+    workingHours: {
+      start: "7:00 AM",
+      end: "3:00 PM"
+      },
     timeSlots: ["07:30 AM", "09:00 AM", "10:30 AM", "12:00 PM"]
   },
   {
@@ -183,7 +231,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/38.jpg",
     workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:30 AM", "11:00 AM", "01:30 PM", "03:30 PM"]
   },
   {
@@ -193,9 +244,12 @@ const doctors = [
     rating: 4.7,
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/26.jpg",
-    workingDays: ["Sunday", "Monday", "Wednesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
-    timeSlots: ["09:30 AM", "11:30 AM", "02:00 PM", "03:30 PM"]
+    workingDays: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
+    workingHours: {
+      start: "2:00 AM",
+      end: "5:00 PM"
+      },
+    timeSlots: ["02:30 AM", "03:45 AM", "09:30 AM", "11:30 AM", "02:00 PM", "03:30 PM"]
   },
   {
     id: 19,
@@ -205,7 +259,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/27.jpg",
     workingDays: ["Monday", "Wednesday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "10:00 AM - 6:00 PM",
+    workingHours: {
+      start: "10:00 AM",
+      end: "6:00 PM"
+      },
     timeSlots: ["10:00 AM", "12:30 PM", "02:30 PM", "04:30 PM"]
   },
   {
@@ -216,8 +273,11 @@ const doctors = [
     location: "Suez",
     image: "https://randomuser.me/api/portraits/women/55.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "12:00 PM - 8:00 PM",
-    timeSlots: ["12:30 PM", "02:00 PM", "03:30 PM", "05:00 PM"]
+    workingHours: {
+      start: "12:00 PM",
+      end: "8:00 AM"
+      },
+    timeSlots: ["12:30 AM", "02:00 AM", "03:30 AM", "05:00 AM"]
   },
   {
       id: 21,
@@ -227,7 +287,10 @@ const doctors = [
       location: "Alexandria",
       image: "https://randomuser.me/api/portraits/men/48.jpg",
       workingDays: ["Sunday", "Monday", "Tuesday", "Thursday", "Saturday"],
-      workingHours: "8:00 PM - 2:00 AM",
+      workingHours: {
+        start: "8:00 PM",
+        end: "2:00 AM"
+        },
       timeSlots: ["08:00 PM", "09:30 PM", "11:00 PM", "12:30 AM", "02:00 AM"]
   },
   {
@@ -238,7 +301,10 @@ const doctors = [
       location: "Giza",
       image: "https://randomuser.me/api/portraits/women/21.jpg",
       workingDays: ["Monday", "Wednesday", "Friday"],
-      workingHours: "9:00 AM - 3:00 PM",
+      workingHours: {
+        start: "9:00 AM",
+        end: "3:00 PM"
+        },
       timeSlots: ["08:30 AM", "10:00 AM", "01:00 PM"]
   },
   {
@@ -249,7 +315,10 @@ const doctors = [
       location: "Cairo",
       image: "https://randomuser.me/api/portraits/men/39.jpg",
       workingDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
-      workingHours: "8:00 PM - 2:00 AM",
+      workingHours: {
+        start: "8:00 PM",
+        end: "2:00 AM"
+        },
       timeSlots: ["08:00 PM", "09:30 PM", "11:00 PM", "12:30 AM", "02:00 AM"]
   },
   {
@@ -260,7 +329,10 @@ const doctors = [
       location: "Tanta",
       image: "https://randomuser.me/api/portraits/women/33.jpg",
       workingDays: ["Sunday", "Tuesday", "Friday"],
-      workingHours: "9:00 AM - 5:00 PM",
+      workingHours: {
+        start: "9:00 AM",
+        end: "5:00 PM"
+        },
       timeSlots: ["10:00 AM", "12:30 PM", "03:30 PM"]
   },
   {
@@ -271,7 +343,10 @@ const doctors = [
       location: "Mansoura",
       image: "https://randomuser.me/api/portraits/men/29.jpg",
       workingDays: ["Monday", "Thursday", "Saturday"],
-      workingHours: "8:00 AM - 2:00 PM",
+      workingHours: {
+        start: "8:00 AM",
+        end: "2:00 PM"
+        },
       timeSlots: ["09:30 AM", "12:00 PM", "03:00 PM"]
   },
   {
@@ -282,7 +357,10 @@ const doctors = [
       location: "Cairo",
       image: "https://randomuser.me/api/portraits/men/30.jpg",
       workingDays: ["Monday", "Wednesday", "Friday"],
-      workingHours: "10:00 AM - 4:00 PM",
+      workingHours: {
+        start: "10:00 PM",
+        end: "4:00 AM"
+        },
       timeSlots: ["09:30 AM", "11:00 AM", "01:30 PM"]
   },
   {
@@ -293,7 +371,10 @@ const doctors = [
       location: "Suez",
       image: "https://randomuser.me/api/portraits/women/44.jpg",
       workingDays: ["Sunday", "Tuesday", "Thursday"],
-      workingHours: "9:00 AM - 5:00 PM",
+      workingHours: {
+        start: "9:00 AM",
+        end: "5:00 PM"
+        },
       timeSlots: ["10:00 AM", "12:00 PM", "03:00 PM"]
   },
   {
@@ -304,7 +385,10 @@ const doctors = [
       location: "Giza",
       image: "https://randomuser.me/api/portraits/men/53.jpg",
       workingDays: ["Monday", "Tuesday", "Thursday"],
-      workingHours: "9:00 AM - 3:00 PM",
+      workingHours: {
+        start: "9:00 AM",
+        end: "3:00 PM"
+        },
       timeSlots: ["09:00 AM", "11:00 AM", "01:30 PM"]
   },
   {
@@ -315,7 +399,10 @@ const doctors = [
       location: "Alexandria",
       image: "https://randomuser.me/api/portraits/women/50.jpg",
       workingDays: ["Monday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      workingHours: "8:00 PM - 2:00 AM",
+      workingHours: {
+        start: "8:00 PM",
+        end: "2:00 AM"
+        },
       timeSlots: ["08:00 PM", "09:30 PM", "11:00 PM", "12:30 AM", "02:00 AM"]
   },
   {
@@ -326,7 +413,10 @@ const doctors = [
       location: "Tanta",
       image: "https://randomuser.me/api/portraits/men/25.jpg",
       workingDays: ["Sunday", "Tuesday", "Friday"],
-      workingHours: "10:00 AM - 9:00 PM",
+      workingHours: {
+        start: "10:00 AM",
+        end: "9:00 PM"
+        },
       timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM", "07:00 PM"]
   },
   {
@@ -337,7 +427,10 @@ const doctors = [
       location: "Suez",
       image: "https://randomuser.me/api/portraits/women/52.jpg",
       workingDays: ["Monday", "Thursday", "Saturday"],
-      workingHours: "9:00 AM - 5:00 PM",
+      workingHours: {
+        start: "9:00 AM",
+        end: "5:00 PM"
+        },
       timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
   },
   {
@@ -348,7 +441,10 @@ const doctors = [
       location: "Cairo",
       image: "https://randomuser.me/api/portraits/men/41.jpg",
       workingDays: ["Tuesday", "Thursday", "Saturday"],
-      workingHours: "10:00 AM - 9:00 PM",
+      workingHours: {
+        start: "10:00 AM",
+        end: "9:00 PM"
+        },
       timeSlots: ["09:30 AM", "12:00 PM", "02:30 PM", "08:00 PM"]
   },
   {
@@ -359,7 +455,10 @@ const doctors = [
       location: "Mansoura",
       image: "https://randomuser.me/api/portraits/women/30.jpg",
       workingDays: ["Monday", "Wednesday", "Friday"],
-      workingHours: "9:00 AM - 4:00 PM",
+      workingHours: {
+        start: "9:00 AM",
+        end: "4:00 PM"
+        },
       timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM"]
   },
   {
@@ -370,7 +469,10 @@ const doctors = [
       location: "Giza",
       image: "https://randomuser.me/api/portraits/men/45.jpg",
       workingDays: ["Monday", "Tuesday", "Thursday"],
-      workingHours: "10:00 AM - 9:00 PM",
+      workingHours: {
+        start: "10:00 AM",
+        end: "9:00 PM"
+        },
       timeSlots: ["09:00 AM", "11:30 AM", "01:30 PM", "07:30 PM"]
   },
   {
@@ -381,7 +483,10 @@ const doctors = [
       location: "Alexandria",
       image: "https://randomuser.me/api/portraits/women/36.jpg",
       workingDays: ["Sunday", "Tuesday", "Thursday"],
-      workingHours: "8:30 AM - 3:00 PM",
+      workingHours: {
+        start: "8:30 AM",
+        end: "3:00 PM"
+        },
       timeSlots: ["08:30 AM", "10:30 AM", "01:00 PM"]
   },
   {
@@ -392,7 +497,10 @@ const doctors = [
       location: "Cairo",
       image: "https://randomuser.me/api/portraits/men/49.jpg",
       workingDays: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday"],
-      workingHours: "8:00 PM - 2:00 AM",
+      workingHours: {
+        start: "8:00 PM",
+        end: "2:00 AM"
+        },
       timeSlots: ["08:00 PM", "09:30 PM", "11:00 PM", "12:30 AM", "02:00 AM"]
   },
   {
@@ -403,7 +511,10 @@ const doctors = [
       location: "Tanta",
       image: "https://randomuser.me/api/portraits/women/28.jpg",
       workingDays: ["Monday", "Thursday", "Saturday"],
-      workingHours: "9:00 AM - 9:00 PM",
+      workingHours: {
+        start: "9:00 AM",
+        end: "9:00 PM"
+        },
       timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM", "06:30 PM"]
   },
   {
@@ -414,7 +525,10 @@ const doctors = [
       location: "Giza",
       image: "https://randomuser.me/api/portraits/men/34.jpg",
       workingDays: ["Monday", "Wednesday", "Thursday", "Saturday", "Sunday"],
-      workingHours: "8:00 PM - 2:00 AM",
+      workingHours: {
+        start: "8:00 PM",
+        end: "2:00 AM"
+        },
       timeSlots: ["08:00 PM", "09:30 PM", "11:00 PM", "12:30 AM", "02:00 AM"]
   },
   {
@@ -425,7 +539,10 @@ const doctors = [
       location: "Alexandria",
       image: "https://randomuser.me/api/portraits/women/29.jpg",
       workingDays: ["Monday", "Wednesday", "Saturday"],
-      workingHours: "9:30 AM - 4:30 PM",
+      workingHours: {
+        start: "9:30 AM",
+        end: "4:30 PM"
+        },
       timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
   },
   {
@@ -436,7 +553,10 @@ const doctors = [
       location: "Cairo",
       image: "https://randomuser.me/api/portraits/women/38.jpg",
       workingDays: ["Sunday", "Tuesday", "Thursday"],
-      workingHours: "9:00 AM - 9:00 PM",
+      workingHours: {
+        start: "9:00 AM",
+        end: "9:00 PM"
+        },
       timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM", "08:00 PM"]
   },
   {
@@ -447,7 +567,10 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/40.jpg",
     workingDays: ["Sunday", "Monday", "Thursday", "Saturday"],
-    workingHours: "7:00 PM - 1:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "1:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
@@ -458,7 +581,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/22.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "8:00 PM - 2:00 AM",
+    workingHours: {
+      start: "8:00 PM",
+      end: "2:00 AM"
+      },
     timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
@@ -469,7 +595,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/31.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Friday"],
-    workingHours: "8:00 PM - 2:00 AM",
+    workingHours: {
+      start: "8:00 PM",
+      end: "2:00 AM"
+      },
     timeSlots: ["08:00 PM", "10:30 PM", "12:30 AM"]
   },
   {
@@ -480,7 +609,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/39.jpg",
     workingDays: ["Monday", "Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 PM - 3:00 AM",
+    workingHours: {
+      start: "9:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["09:00 PM", "11:00 PM", "01:00 AM"]
   },
   {
@@ -491,8 +623,11 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/49.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "10:00 PM - 4:00 AM",
-    timeSlots: ["10:00 PM", "12:00 AM", "02:00 AM"]
+    workingHours: {
+      start: "10:00 PM",
+      end: "4:00 AM"
+      },
+    timeSlots: ["10:00 PM", "01:00 AM", "02:00 AM", "03:59 AM"]
   },
   {
     id: 46,
@@ -502,7 +637,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/23.jpg",
     workingDays: ["Sunday", "Monday", "Thursday", "Saturday"],
-    workingHours: "9:00 PM - 3:00 AM",
+    workingHours: {
+      start: "9:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["09:00 PM", "11:30 PM", "01:30 AM"]
   },
   {
@@ -513,7 +651,10 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/46.jpg",
     workingDays: ["Monday", "Wednesday", "Thursday", "Saturday"],
-    workingHours: "7:00 PM - 1:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "1:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
@@ -524,7 +665,10 @@ const doctors = [
     location: "Suez",
     image: "https://randomuser.me/api/portraits/women/35.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Sunday"],
-    workingHours: "8:00 PM - 2:00 AM",
+    workingHours: {
+      start: "8:00 PM",
+      end: "2:00 AM"
+      },
     timeSlots: ["08:00 PM", "10:30 PM", "12:30 AM"]
   },
   {
@@ -535,7 +679,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/55.jpg",
     workingDays: ["Monday", "Tuesday", "Thursday", "Saturday"],
-    workingHours: "8:00 PM - 2:00 AM",
+    workingHours: {
+      start: "8:00 PM",
+      end: "2:00 AM"
+      },
     timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
@@ -546,7 +693,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/37.jpg",
     workingDays: ["Sunday", "Monday", "Tuesday", "Thursday"],
-    workingHours: "10:00 PM - 4:00 AM",
+    workingHours: {
+      start: "10:00 AM",
+      end: "4:00 PM"
+      },
     timeSlots: ["10:00 PM", "12:00 AM", "02:00 AM"]
   },
   {
@@ -557,7 +707,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/50.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "11:00 PM - 5:00 AM",
+    workingHours: {
+      start: "11:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
@@ -568,7 +721,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/53.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "8:00 PM - 2:00 AM",
+    workingHours: {
+      start: "8:00 PM",
+      end: "2:00 AM"
+      },
     timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
@@ -579,7 +735,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/27.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Sunday"],
-    workingHours: "9:00 PM - 3:00 AM",
+    workingHours: {
+      start: "9:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["09:00 PM", "11:30 PM", "01:30 AM"]
   },
   {
@@ -590,7 +749,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/22.jpg",
     workingDays: ["Monday", "Tuesday", "Thursday", "Saturday"],
-    workingHours: "10:00 PM - 4:00 AM",
+    workingHours: {
+      start: "10:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["10:00 PM", "12:00 AM", "02:00 AM"]
   },
   {
@@ -601,7 +763,10 @@ const doctors = [
     location: "Suez",
     image: "https://randomuser.me/api/portraits/men/51.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 PM - 3:00 AM",
+    workingHours: {
+      start: "9:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["09:00 PM", "11:30 PM", "01:30 AM"]
   },
   {
@@ -612,7 +777,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/41.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "7:00 PM - 1:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "1:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
@@ -623,7 +791,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/42.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Sunday"],
-    workingHours: "7:00 PM - 1:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "1:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
@@ -634,7 +805,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/26.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 PM - 3:00 AM",
+    workingHours: {
+      start: "9:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["09:00 PM", "11:30 PM", "01:30 AM"]
   },
   {
@@ -645,7 +819,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/55.jpg",
     workingDays: ["Monday", "Wednesday", "Thursday", "Saturday"],
-    workingHours: "8:00 PM - 2:00 AM",
+    workingHours: {
+      start: "8:00 PM",
+      end: "2:00 AM"
+      },
     timeSlots: ["08:00 PM", "10:30 PM", "12:30 AM"]
   },
   {
@@ -656,7 +833,10 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/24.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday"],
-    workingHours: "7:00 PM - 1:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "1:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
@@ -667,7 +847,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/54.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Sunday"],
-    workingHours: "7:00 PM - 4:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM", "02:00 AM"]
   },
   {
@@ -678,7 +861,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/40.jpg",
     workingDays: ["Sunday", "Thursday", "Saturday", "Monday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "02:00 PM", "04:00 PM"]
   },
   {
@@ -689,7 +875,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/34.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "10:00 AM - 4:00 PM",
+    workingHours: {
+      start: "10:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["08:30 AM", "11:00 AM", "01:30 PM", "03:30 PM"]
   },
   {
@@ -700,7 +889,10 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "7:00 PM - 4:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
@@ -711,7 +903,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/24.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "8:00 AM - 2:00 PM",
+    workingHours: {
+      start: "8:00 AM",
+      end: "2:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:30 AM", "01:00 PM"]
   },
   {
@@ -722,7 +917,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/57.jpg",
     workingDays: ["Monday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "2:00 PM - 8:00 PM",
+    workingHours: {
+      start: "2:00 PM",
+      end: "8:00 PM"
+      },
     timeSlots: ["02:00 PM", "04:00 PM", "06:00 PM", "08:00 PM"]
   },
   {
@@ -733,7 +931,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/42.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Saturday"],
-    workingHours: "7:00 PM - 4:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["07:30 PM", "10:00 PM", "12:30 AM", "03:00 AM"]
   },
   {
@@ -744,7 +945,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/33.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "6:00 AM - 12:00 PM",
+    workingHours: {
+      start: "6:00 AM",
+      end: "12:00 PM"
+      },
     timeSlots: ["06:30 AM", "08:30 AM", "10:30 AM"]
   },
   {
@@ -755,7 +959,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/48.jpg",
     workingDays: ["Sunday", "Monday", "Friday"],
-    workingHours: "10:00 AM - 4:00 PM",
+    workingHours: {
+      start: "10:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM"]
   },
   {
@@ -766,7 +973,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/23.jpg",
     workingDays: ["Monday", "Wednesday", "Saturday"],
-    workingHours: "8:00 PM - 2:00 AM",
+    workingHours: {
+      start: "8:00 PM",
+      end: "2:00 AM"
+      },
     timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
@@ -777,7 +987,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/52.jpg",
     workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "6:00 AM - 12:00 PM",
+    workingHours: {
+      start: "6:00 AM",
+      end: "12:00 PM"
+      },
     timeSlots: ["06:30 AM", "08:30 AM", "10:00 AM"]
   },
   {
@@ -788,7 +1001,10 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/49.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "1:00 PM - 7:00 PM",
+    workingHours: {
+      start: "1:00 PM",
+      end: "7:00 PM"
+      },
     timeSlots: ["01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
@@ -799,7 +1015,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/39.jpg",
     workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "7:00 PM - 4:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:30 PM", "12:00 AM"]
   },
   {
@@ -810,7 +1029,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/28.jpg",
     workingDays: ["Sunday", "Wednesday", "Saturday"],
-    workingHours: "8:00 PM - 2:00 AM",
+    workingHours: {
+      start: "8:00 PM",
+      end: "2:00 AM"
+      },
     timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
@@ -821,7 +1043,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/56.jpg",
     workingDays: ["Monday", "Thursday", "Saturday"],
-    workingHours: "7:00 PM - 4:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["07:30 PM", "09:30 PM", "12:00 AM"]
   },
   {
@@ -832,7 +1057,10 @@ const doctors = [
     location: "Suez",
     image: "https://randomuser.me/api/portraits/men/47.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:30 AM", "02:00 PM"]
   },
   {
@@ -843,7 +1071,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/58.jpg",
     workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "7:00 PM - 4:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["07:30 PM", "10:00 PM", "12:30 AM"]
   },
   {
@@ -854,7 +1085,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/60.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday"],
-    workingHours: "8:00 PM - 2:00 AM",
+    workingHours: {
+      start: "8:00 PM",
+      end: "2:00 AM"
+      },
     timeSlots: ["08:00 PM", "10:00 PM", "12:00 AM"]
   },
   {
@@ -865,7 +1099,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/33.jpg",
     workingDays: ["Monday", "Wednesday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "02:00 PM"]
   },
   {
@@ -876,7 +1113,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/51.jpg",
     workingDays: ["Monday", "Wednesday", "Friday"],
-    workingHours: "7:00 PM - 4:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["09:00 PM", "11:30 PM", "02:00 AM"]
   },
   {
@@ -887,7 +1127,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/38.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Friday"],
-    workingHours: "7:00 PM - 3:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
@@ -898,7 +1141,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/62.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "8:00 AM - 4:00 PM",
+    workingHours: {
+      start: "8:00 AM",
+      end: "4:00 PM"
+      },
     timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
@@ -909,7 +1155,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/42.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "2:00 PM - 10:00 PM",
+    workingHours: {
+      start: "2:00 PM",
+      end: "10:00 PM"
+      },
     timeSlots: ["02:00 PM", "04:00 PM", "06:00 PM", "08:00 PM", "10:00 PM"]
   },
   {
@@ -920,7 +1169,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/24.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
@@ -931,7 +1183,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/39.jpg",
     workingDays: ["Sunday", "Monday", "Wednesday", "Thursday"],
-    workingHours: "9:00 AM - 9:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "9:00 PM"
+      },
     timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM", "06:00 PM", "09:00 PM"]
   },
   {
@@ -942,7 +1197,10 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/67.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "1:00 PM - 9:00 PM",
+    workingHours: {
+      start: "1:00 PM",
+      end: "9:00 PM"
+      },
     timeSlots: ["01:00 PM", "03:00 PM", "05:00 PM", "07:00 PM", "09:00 PM"]
   },
   {
@@ -953,7 +1211,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/60.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "9:00 AM - 6:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "6:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
@@ -964,7 +1225,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/63.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
@@ -975,7 +1239,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/35.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "9:00 AM - 9:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "9:00 PM"
+      },
     timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM", "06:00 PM", "09:00 PM"]
   },
   {
@@ -986,7 +1253,10 @@ const doctors = [
     location: "Suez",
     image: "https://randomuser.me/api/portraits/women/66.jpg",
     workingDays: ["Monday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "8:00 AM - 4:00 PM",
+    workingHours: {
+      start: "8:00 AM",
+      end: "4:00 PM"
+      },
     timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
@@ -997,7 +1267,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/41.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Saturday"],
-    workingHours: "2:00 PM - 10:00 PM",
+    workingHours: {
+      start: "2:00 PM",
+      end: "10:00 PM"
+      },
     timeSlots: ["02:00 PM", "04:00 PM", "06:00 PM", "08:00 PM", "10:00 PM"]
   },
   {
@@ -1008,7 +1281,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/44.jpg",
     workingDays: ["Monday", "Wednesday", "Saturday", "Sunday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:00 AM", "12:00 PM", "03:00 PM", "06:00 PM", "09:00 PM"]
   },
   {
@@ -1019,7 +1295,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/52.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "9:00 AM - 6:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "6:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
@@ -1030,7 +1309,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/61.jpg",
     workingDays: ["Monday", "Wednesday", "Saturday", "Sunday"],
-    workingHours: "7:00 PM - 3:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
@@ -1041,7 +1323,10 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/58.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "3:00 PM - 11:00 PM",
+    workingHours: {
+      start: "3:00 PM",
+      end: "11:00 PM"
+      },
     timeSlots: ["03:00 PM", "05:00 PM", "07:00 PM", "09:00 PM", "11:00 PM"]
   },
   {
@@ -1052,7 +1337,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/50.jpg",
     workingDays: ["Monday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "10:00 AM - 6:00 PM",
+    workingHours: {
+      start: "10:00 AM",
+      end: "6:00 PM"
+      },
     timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM", "06:00 PM"]
   },
   {
@@ -1063,7 +1351,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/64.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
@@ -1074,7 +1365,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/49.jpg",
     workingDays: ["Sunday", "Monday", "Wednesday", "Thursday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
@@ -1085,7 +1379,10 @@ const doctors = [
     location: "Suez",
     image: "https://randomuser.me/api/portraits/women/59.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday"],
-    workingHours: "8:00 AM - 4:00 PM",
+    workingHours: {
+      start: "8:00 AM",
+      end: "4:00 PM"
+      },
     timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
@@ -1096,7 +1393,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/47.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "7:00 PM - 3:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
@@ -1107,7 +1407,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/43.jpg",
     workingDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
-    workingHours: "8:00 AM - 2:00 PM",
+    workingHours: {
+      start: "8:00 AM",
+      end: "2:00 PM"
+      },
     timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM"]
   },
   {
@@ -1118,7 +1421,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/women/69.jpg",
     workingDays: ["Sunday", "Monday", "Wednesday", "Friday", "Saturday"],
-    workingHours: "7:00 PM - 3:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
@@ -1129,7 +1435,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/57.jpg",
     workingDays: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "3:00 PM - 9:00 PM",
+    workingHours: {
+      start: "3:00 PM",
+      end: "9:00 PM"
+      },
     timeSlots: ["03:00 PM", "05:00 PM", "07:00 PM", "09:00 PM"]
   },
   {
@@ -1140,7 +1449,10 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/60.jpg",
     workingDays: ["Monday", "Wednesday", "Thursday", "Friday", "Sunday"],
-    workingHours: "8:00 AM - 4:00 PM",
+    workingHours: {
+      start: "8:00 AM",
+      end: "4:00 PM"
+      },
     timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
@@ -1151,7 +1463,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/55.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "12:00 PM - 6:00 PM",
+    workingHours: {
+      start: "12:00 PM",
+      end: "6:00 PM"
+      },
     timeSlots: ["12:00 PM", "02:00 PM", "04:00 PM", "06:00 PM"]
   },
   {
@@ -1162,7 +1477,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
     workingDays: ["Monday", "Wednesday", "Saturday", "Sunday", "Tuesday"],
-    workingHours: "7:00 PM - 3:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
@@ -1173,7 +1491,10 @@ const doctors = [
     location: "Suez",
     image: "https://randomuser.me/api/portraits/men/51.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "2:00 PM - 8:00 PM",
+    workingHours: {
+      start: "2:00 PM",
+      end: "8:00 PM"
+      },
     timeSlots: ["02:00 PM", "04:00 PM", "06:00 PM", "08:00 PM"]
   },
   {
@@ -1184,7 +1505,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/47.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
@@ -1195,7 +1519,10 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/men/40.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "7:00 PM - 4:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM", "04:00 AM"]
   },
   {
@@ -1206,7 +1533,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/43.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
-    workingHours: "10:00 AM - 4:00 PM",
+    workingHours: {
+      start: "10:00 AM",
+      end: "4:00 PM"
+      },
     timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
@@ -1217,7 +1547,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/56.jpg",
     workingDays: ["Monday", "Tuesday", "Saturday", "Sunday", "Thursday"],
-    workingHours: "7:00 PM - 3:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
@@ -1228,7 +1561,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/men/54.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
-    workingHours: "8:00 AM - 4:00 PM",
+    workingHours: {
+      start: "8:00 AM",
+      end: "4:00 PM"
+      },
     timeSlots: ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
@@ -1239,7 +1575,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/women/57.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "7:00 PM - 3:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
@@ -1250,7 +1589,10 @@ const doctors = [
     location: "Suez",
     image: "https://randomuser.me/api/portraits/men/59.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
-    workingHours: "10:00 AM - 4:00 PM",
+    workingHours: {
+      start: "10:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
   },
   {
@@ -1261,7 +1603,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/60.jpg",
     workingDays: ["Tuesday", "Thursday", "Saturday", "Sunday", "Monday"],
-    workingHours: "7:00 PM - 3:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
@@ -1272,7 +1617,10 @@ const doctors = [
     location: "Mansoura",
     image: "https://randomuser.me/api/portraits/women/62.jpg",
     workingDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
@@ -1283,7 +1631,10 @@ const doctors = [
     location: "Alexandria",
     image: "https://randomuser.me/api/portraits/men/42.jpg",
     workingDays: ["Monday", "Thursday", "Saturday", "Sunday", "Tuesday"],
-    workingHours: "7:00 PM - 3:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "3:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM"]
   },
   {
@@ -1294,7 +1645,10 @@ const doctors = [
     location: "Cairo",
     image: "https://randomuser.me/api/portraits/women/54.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Saturday", "Monday"],
-    workingHours: "7:00 PM - 4:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM", "04:00 AM"]
   },
   {
@@ -1305,7 +1659,10 @@ const doctors = [
     location: "Tanta",
     image: "https://randomuser.me/api/portraits/men/46.jpg",
     workingDays: ["Monday", "Wednesday", "Friday", "Saturday", "Sunday"],
-    workingHours: "9:00 AM - 5:00 PM",
+    workingHours: {
+      start: "9:00 AM",
+      end: "5:00 PM"
+      },
     timeSlots: ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM", "05:00 PM"]
   },
   {
@@ -1316,7 +1673,10 @@ const doctors = [
     location: "Giza",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
     workingDays: ["Sunday", "Tuesday", "Thursday", "Friday", "Saturday"],
-    workingHours: "7:00 PM - 4:00 AM",
+    workingHours: {
+      start: "7:00 PM",
+      end: "4:00 AM"
+      },
     timeSlots: ["07:00 PM", "09:00 PM", "11:00 PM", "01:00 AM", "03:00 AM", "04:00 AM"]
   }
 ];
