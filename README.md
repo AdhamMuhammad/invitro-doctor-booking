@@ -1,12 +1,41 @@
-# React + Vite
+# Invitro Doctor Booking UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and interactive doctor appointment booking interface built with React, Tailwind CSS, Zustand, and Vite. The app supports appointment editing, cancellation, and local persistence using localStorage.
 
-Currently, two official plugins are available:
+Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Book appointments with doctors based on available time slots
+- Edit appointment date & time with validations
+- Cancel appointments with instant UI update
+- Data persistence with localStorage
+- Built with Vite for fast dev experience
 
-## Expanding the ESLint configuration
+Tech Stack:
+React 19
+Vite 6
+Tailwind CSS 4
+Zustand (for state management)
+React Datepicker
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Setup Instructions:
+
+- Clone the repository
+
+git clone https://github.com/AdhamMuhammad/invitro-doctor-booking.git
+cd invitro-doctor-booking
+
+- Install dependencies
+
+npm install
+
+- Run the app locally
+
+npm run dev
+
+How I Used AI Tools:
+
+I used AI tools (ChatGPT) as my primary coding assistant throughout the project. I didn’t start the project entirely from scratch, instead i:
+
+- Prompted ChatGPT to generate core logic and components like the appointment card, date/time parsing, and Zustand store.
+- Used AI suggestions as a foundation, then edited and customized the code to fit my project’s needs.
+- Debugged AI-generated code manually and made improvements to better match design and user experience goals.
