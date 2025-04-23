@@ -19,22 +19,22 @@ React Datepicker
 
 Setup Instructions:
 
-- Clone the repository
+1/ Clone the repository
 
-git clone https://github.com/AdhamMuhammad/invitro-doctor-booking.git
-cd invitro-doctor-booking
+- git clone https://github.com/AdhamMuhammad/invitro-doctor-booking.git
+- cd invitro-doctor-booking
 
-- Install dependencies
+2/ Install dependencies
 
-npm install
+- npm install
 
-- Run the app locally
+3/ Run the app locally
 
-npm run dev
+- npm run dev
 
 How I Used AI Tools:
 
-I used AI tools (ChatGPT) as my primary coding assistant throughout the project. I didn’t start the project entirely from scratch, instead i:
+I used AI tools as my primary coding assistant throughout the project. I didn’t start the project entirely from scratch, instead i:
 
 - Prompted ChatGPT to generate core logic and components like the appointment card, date/time parsing, and Zustand store.
 - Used AI suggestions as a foundation, then edited and customized the code to fit my project’s needs.
